@@ -64,7 +64,7 @@
             </ul>
             <form class="navbar-form navbar-right">   
                <div class="input-group">			
-			   <input style="width:120px" type="text" class="form-control">
+			   <input style="width:140px" type="text" class="form-control">
                <span class="input-group-addon"><img style="width:15px;height:15px" src="img/search.png"></img></span>
                </div>
             </form>
@@ -391,7 +391,7 @@
            </a>
 		  <h2>中心会员</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="" role="button"> 登录注册 »</a></p>
+          <p><a class="btn btn-default" href="" role="button" data-toggle="modal" data-target="#myModal"> 登录注册 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
            <a href="">
@@ -421,6 +421,60 @@
         <p>© 2016 复旦大学, 上海. · <a href="">Privacy</a> · <a href="">Terms</a></p>
       </footer>
 
+	  
+	  <!-- 模态框（Modal） -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="width:400px;">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               登录
+            </h4>
+         </div>
+         <div class="modal-body">
+                <div id="login" >
+				    <form class="bs-example bs-example-form" data-example-id="input-group-sizing">                                     
+                        <input type="text" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1">
+                      </br>
+                        <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
+					  <br>
+                      <div class="input-group">      
+                        <span>&nbsp</span>					  
+                        <input type="checkbox" aria-label="..."> 
+						<span>&nbsp&nbsp下次自动登录</span>
+						<button class="btn btn-md btn-primary" type="button" style="margin-left:75px">登录</button>&nbsp&nbsp
+						<a style="cursor:pointer;" onclick="changeToRegistry()">没有账号,请先注册</a>		
+                      </div>
+                    </form>
+				
+				</div>
+				<div id="registry" style="display:none">
+				   <form class="bs-example bs-example-form" data-example-id="input-group-sizing">                                      
+                     <input type="text" class="form-control" placeholder="用户名 " aria-describedby="sizing-addon1">                 
+                     </br>                   					
+                     <input type="text" class="form-control" placeholder="邮箱" aria-describedby="sizing-addon2">                   
+					 </br>    					 
+                     <input type="text" class="form-control" placeholder="联系方式" aria-describedby="sizing-addon2">                  
+					 </br>    					
+                     <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">                    
+					 </br>    					  
+                     <input type="text" class="form-control" placeholder="确认密码" aria-describedby="sizing-addon2">                     
+					 </br>                       
+				     <button class="btn btn-md btn-primary" type="button" style="margin-left:120px">&nbsp&nbsp点击注册&nbsp&nbsp</button>    
+                     <a style="cursor:pointer;"  onclick="changeToLogin()">已有账号，请登录</a>					 
+                     </br>
+                    </form>
+				</div>
+            
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+
     </div><!-- /.container -->
 
 
@@ -429,6 +483,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
