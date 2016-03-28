@@ -27,11 +27,7 @@
 
     <!-- Custom styles for this template -->
     <link href="http://v3.bootcss.com/examples/carousel/carousel.css" rel="stylesheet">
-	<!--[if IE 8]><body class="ie">
-	  <style type="text/css">
-             #contentView{ padding-left:0px;}
-      </style>
-	<![endif]-->
+	
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -232,6 +228,10 @@
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
-  
+    <script type="text/javascript">
+	$(document).ready(function() {
+		$('#contentView').css("padding-left","0px");
+	});
+</script>
 
 </body></html>
