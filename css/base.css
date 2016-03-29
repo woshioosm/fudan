@@ -46,6 +46,13 @@ blockquote:after {
   margin-left: 80px;
   width: auto;
 }
+
+ .group-right2 {
+  float: none;
+  margin-left: 160px;
+  width: auto;
+}
+
  .group-center {
   float: none;
   margin-left: 50px;
