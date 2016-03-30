@@ -33,14 +33,27 @@
 	
     <!-- Custom styles for this template -->
     <link href="http://v3.bootcss.com/examples/carousel/carousel.css" rel="stylesheet">
+	<script type="text/javascript"> 
+      window.onscroll = function(){ 
+      var t = document.documentElement.scrollTop || document.body.scrollTop;  
+      var top_div = document.getElementById( "top_div" ); 
+      if( t >= 50 ) { 	    
+         $("#navBar").addClass("navbar-fixed-top");
+		 $("#navBar").css("margin-top","0px");
+      } else { 
+        $("#navBar").removeClass("navbar-fixed-top");
+		$("#navBar").css("margin-top","50px");
+      } 
+} 
+
+</script> 
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
-    <div class="navbar-wrapper">
-      <div class="container"  style="padding-left:5px;padding-right5px">
-        <nav class="navbar navbar-default">
-        <div class="container-fluid">
+
+        <nav id="navBar" class="navbar navbar-default " style="margin-top:50px;margin-bottom:0px">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -79,8 +92,7 @@
         </div><!--/.container-fluid -->
       </nav>
 
-      </div>
-    </div>
+ 
 
 
  <!-- Carousel
