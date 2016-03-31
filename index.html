@@ -40,7 +40,7 @@
       if( t >= 50 ) { 	    
          $("#navBar").addClass("navbar-fixed-top");
 		 $("#navBar").css("margin-top","0px");
-      } else { 
+      } else { 	
         $("#navBar").removeClass("navbar-fixed-top");
 		$("#navBar").css("margin-top","50px");
       } 
@@ -65,26 +65,26 @@
 	
 	<!--  header-->
     <nav id="navBar" class="navbar navbar-default " style="margin-top:0px;margin-bottom:0px">
-        <div class="container">
-          <div class="navbar-header">
+        <div class="container" >
+         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html" style="font-size:24px" >口岸<span style="color:red">·</span>中国<span style="color:red">·</span>世界</a>
+            <a class="navbar-brand" href="index.html" style="font-size:24px" ></a>
           </div>
-
+      
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" style="font-size:16px;font-weight:400">
-              <li><a href="aboutus.html">中心简介</a></li>
-			  <li><a href="sub.html">学术新闻</a></li>
-              <li><a href="people.html">成员</a></li>
-			  <li><a href="paper.html">文库</a></li>
-			  <li><a href="#">讨论组</a></li>		 
-			  <li><a href="#">海关史园地</a></li>
-              <li class="dropdown">
+            <ul class="nav navbar-nav" style="font-size:16px;font-weight:320;">
+              <li class="navli"><a href="aboutus.html">中心简介</a></li>
+			  <li class="navli"><a href="sub.html">学术新闻</a></li>
+              <li class="navli"><a href="people.html">中心成员</a></li>
+			  <li class="navli"><a href="paper.html">学术文库</a></li>
+			  <li class="navli"><a href="#">讨论组</a></li>		 
+			  <li class="navli"><a href="#">海关史园地</a></li>
+              <li class="navli" class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">海关文献数据库<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">海关文献目录查询</a></li>
@@ -94,12 +94,13 @@
                 </ul>
               </li>
             </ul>
+			<!--
             <form class="navbar-form navbar-right" style="padding-left:0px;padding-right:0px">   
                <div class="input-group"  style="width:140px">			
 			   <input type="text" class="form-control" placeholder="搜索内容">
                <span class="input-group-addon" style="cursor:pointer;"><img style="width:15px;height:15px" src="img/search.png"></img></span>
                </div>
-            </form>
+            </form> -->
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
@@ -128,11 +129,10 @@
 	   <div class="container marketing" >
        <div class="row">
         <div class="col-sm-4 panelCol">		
-		  <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-            <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                <img src="img/earth.png" style="width: 22px;height: 22px;position: relative;top: -3px;left: -4px;">
-                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px"> 海关史园地
+		  <div class="panel panel-default panelheadingLeft" style="border-color:#f8f8f8;background-color:#f8f8f8">
+            <div class=" panel-heading" style="background-color:#f8f8f8">
+                <!--<i class="fa fa-link"></i>-->             
+                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px"> 会议· 通知
                 <small>Blog</small></span></a>
                 <div class="pull-right" style="">
 
@@ -173,10 +173,9 @@
 				<div style="font-size:10px;padding:0px;margin-left:22px;" class="col-xs-2">陆晓雅</div>
 			</div>
           </div>  
-          <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                <img src="img/test.png" style="width: 22px;height: 22px;position: relative;top: -3px;left: -4px;">
+          <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
+           <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+                <!--<i class="fa fa-link"></i>-->              
                  <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">海关数据
                 <small>Data</small></span></a>
                 <div class="pull-right" style="">
@@ -211,10 +210,9 @@
  
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-5 panelCol">
-		 <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-            <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                <img src="img/test.png" style="width: 22px;height: 22px;position: relative;top: -3px;left: -4px;">
+		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
+            <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+                <!--<i class="fa fa-link"></i>-->              
                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">综合新闻 
                 <small>News</small></span></a>
                 <div class="pull-right" style="">
@@ -258,10 +256,9 @@
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">11月18日</div>
 			</div>
           </div>            
-		 <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                <img src="img/microphone.png" style="width: 22px;height: 22px;position: relative;top: -3px;left: -4px;">
+		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
+           <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+                <!--<i class="fa fa-link"></i>-->              
                  <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">讨论区
                 <small>Discuss</small></span></a>
                 <div class="pull-right" style="">
@@ -316,10 +313,9 @@
          
 	   </div><!-- /.col-sm-4 -->
         <div class="col-sm-3 panelCol">
-          <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                <img src="img/data.png" style="width: 22px;height: 22px;position: relative;top: -3px;left: -4px;">
+          <div class="panel panel-default panelheadingRight" style="border-color:#f8f8f8;background-color:#f8f8f8">
+           <div class=" panel-heading" style="background-color:#f8f8f8">
+                <!--<i class="fa fa-link"></i>-->                
                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">学术文库 
                 <small>Paper</small></span></a>
                 <div class="pull-right" style="">

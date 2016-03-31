@@ -1,12 +1,28 @@
 .panelCol{
 	padding-left:0px !important;
-	padding-right:0px !important;	
+	padding-right:0px !important;
+    border-top-left-radius:0px !important;
+    border-top-right-radius:0px !important;	
 }
 
+.panelheading{
+    border-top-left-radius:0px !important;
+    border-top-right-radius:0px !important;	
+}
+
+.panelheadingLeft{
+    
+    border-top-right-radius:0px !important;	
+}
+
+.panelheadingRight{
+    border-top-left-radius:0px !important;	
+}
 .panelCol2{
 	padding-left:0px !important;
 	padding-right:0px !important;	
 }
+
 blockquote:before {
 	content: open-quote;
 	font-size: 24pt;
@@ -163,7 +179,7 @@ body{
 }
 .aboutus{
 	font-family:微软雅黑;
-	font-size:17px;
+	font-size:16px;
 	font-weight: 500;
 	line-height: 33px;
 }
