@@ -14,8 +14,10 @@
     <title>复旦大学海关史与海关文献国际研究中心欢迎您</title>
 
     <!-- Bootstrap core CSS -->
+	<link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
+	    
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./js/ie-emulation-modes-warning.js"></script>
@@ -53,68 +55,93 @@
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
     <!--  header-->
 	 <div class="container">
-	    <header id="header" role="banner">
-        <div >
-          <div id="header-content">
-             <a href="/" title="Home" rel="home" id="logo" class="ilink"><img src="img/logo.png" alt="Home"></a>
-          </div> 
-         </div>             
-        </header>
-	</div>
+	    <header class="header  clearfix navbar navbar-fixed-top" style="background-color:rgba(0, 0, 0, 0.4380392);margin-bottom:0px;padding-bottom:0px;padding-top:0px">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start -->
+						<!-- ================ -->
+						<div class="header-left clearfix">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll" style="margin-bottom:0px">
+								<a href="#banner"><img id="logo" src="img/logo.png" alt="Worthy"></a>
+							</div>
+
+							<!-- name-and-slogan -->
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start -->
+						<!-- ================ -->
+						<div class="header-right clearfix">
+
+							<!-- main-navigation start -->
+							<!-- ================ -->
+							<div class="main-navigation animated">
+
+								<!-- navbar start -->
+								<!-- ================ -->
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right" >
+												<li class="active"><a href="#banner"></a></li>
+												<li><a href="#about">新闻</a></li>
+												<li><a href="#services">文库</a></li>
+												<li><a href="#portfolio">成员</a></li>	
+                                                <li><a href="#portfolio">海关史园地</a></li>													
+												<li><a href="#contact">文献数据库</a></li>
+												<li><a href="#clients">关于我们</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+	 </div>
 	
 	
 	<!--  header-->
-    <nav id="navBar" class="navbar navbar-default " style="margin-top:0px;margin-bottom:0px">
-        <div class="container" >
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html" style="font-size:24px" ></a>
-          </div>
-      
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" style="font-size:16px;font-weight:320;">
-              <li class="navli"><a href="aboutus.html">中心简介</a></li>
-			  <li class="navli"><a href="sub.html">学术新闻</a></li>
-              <li class="navli"><a href="people.html">中心成员</a></li>
-			  <li class="navli"><a href="paper.html">学术文库</a></li>
-			  <li class="navli"><a href="#">讨论组</a></li>		 
-			  <li class="navli"><a href="#">海关史园地</a></li>
-              <li class="navli" class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">海关文献数据库<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">海关文献目录查询</a></li>
-                  <li><a href="#">统计数据</a></li>
-                  <li><a href="#">历史地图与地理信息系统</a></li>
-                  <li><a href="#">照片资料</a></li>
-                </ul>
-              </li>
-            </ul>
-			<!--
-            <form class="navbar-form navbar-right" style="padding-left:0px;padding-right:0px">   
-               <div class="input-group"  style="width:140px">			
-			   <input type="text" class="form-control" placeholder="搜索内容">
-               <span class="input-group-addon" style="cursor:pointer;"><img style="width:15px;height:15px" src="img/search.png"></img></span>
-               </div>
-            </form> -->
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
+    
  
 
 
  <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:-315px" >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:-200px" >
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
-          <img class="first-slide" src="img/banner2.jpg" alt="First slide">
+          <img class="first-slide" src="img/banner9.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
              
@@ -129,17 +156,17 @@
 	   <div class="container marketing" >
        <div class="row">
         <div class="col-sm-4 panelCol">		
-		  <div class="panel panel-default panelheadingLeft" style="border-color:#f8f8f8;background-color:#f8f8f8">
-            <div class=" panel-heading" style="background-color:#f8f8f8">
+		  <div class="panel panel-default panelheadingLeft" style="border-color:#f8f8f8">
+            <div class=" panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->             
-                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px"> 会议· 通知
+                 <a href="#"><span class="mytitle"> 会议· 通知
                 <small>Blog</small></span></a>
                 <div class="pull-right" style="">
 
                 </div>
                 <div class="clearfix"></div>
 		   </div>
-             <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   			
+             <div class="row" style="margin:15px 0px 0px 2px;" id="fudanNews">   			
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:10px;" class="col-xs-8 add-ellipsis">
 				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">观点:年告——供给改革的</a>
 				</div>
@@ -174,9 +201,9 @@
 			</div>
           </div>  
           <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+           <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
-                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">海关数据
+                 <a href="#"><span class="mytitle" >海关数据
                 <small>Data</small></span></a>
                 <div class="pull-right" style="">
 
@@ -211,9 +238,9 @@
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-5 panelCol">
 		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
-            <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+            <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
-                <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">综合新闻 
+                <a href="#"><span class="mytitle" >综合新闻 
                 <small>News</small></span></a>
                 <div class="pull-right" style="">
 
@@ -257,9 +284,9 @@
 			</div>
           </div>            
 		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class="panelheading panel-heading" style="background-color:#f8f8f8">
+           <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
-                 <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">讨论区
+                 <a href="#"><span class="mytitle" >讨论区
                 <small>Discuss</small></span></a>
                 <div class="pull-right" style="">
 
@@ -314,9 +341,9 @@
 	   </div><!-- /.col-sm-4 -->
         <div class="col-sm-3 panelCol">
           <div class="panel panel-default panelheadingRight" style="border-color:#f8f8f8;background-color:#f8f8f8">
-           <div class=" panel-heading" style="background-color:#f8f8f8">
+           <div class=" panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->                
-                <a href="#"><span class="mytitle" style="font-family:楷体;font-size:21px">学术文库 
+                <a href="#"><span class="mytitle" >学术文库 
                 <small>Paper</small></span></a>
                 <div class="pull-right" style="">
 
