@@ -110,7 +110,7 @@
 												<li><a href="#portfolio">讨论组</a></li>
                                                 <li><a href="#portfolio">海关史园地</a></li>													
 												<li class="dropdown">
-                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">海关文献数据库<span class="caret"></span></a>
+                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据库<span class="caret"></span></a>
                                                     <ul class="dropdown-menu" style="background-color:rgba(0, 0, 0, 0.4380392)">
                                                       <li style="margin-top:10px"><a class="subList" href="#">海关文献目录查询</a></li>
                                                       <li style="margin-top:10px"><a class="subList" href="#">统计数据</a></li>
@@ -118,7 +118,7 @@
                                                       <li style="margin-top:10px"><a class="subList" href="#">照片资料</a></li>
                                                     </ul>
                                                 </li>
-												<li><a href="#clients">简介</a></li>
+												<li><a href="#clients">关于我们</a></li>
 											</ul>
 										</div>
 
@@ -150,7 +150,7 @@
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
-          <img class="first-slide" src="img/banner9.png" alt="First slide">
+          <img id="slider" class="first-slide" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
              
@@ -577,6 +577,14 @@
       });   
     });   
   }  
+  var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
+   bodyBgs[0] = "img/banner9.png";
+   bodyBgs[1] = "img/banner2.jpg";
+   bodyBgs[2] = "img/banner2.png";
+   bodyBgs[3] = "img/banner9.png";
+   bodyBgs[4] = "img/banner8.jpg";
+   var randomBgIndex = Math.round( Math.random() * 4 );
+   $("#slider").attr("src",bodyBgs[randomBgIndex]);
 </script>
   
 
