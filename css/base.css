@@ -6,24 +6,92 @@
 	
 }
 
+.standard-vertical-bordered {
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede;
+    border-radius: 2px;
+    border-color: #e5e5e5;
+}
+ol, ul {
+    list-style: none;
+}
+.event-list-item-date{
+	float: left;
+    width: 15%;
+    margin-right: 2%;
+}
+.event-list-item-date span.event-date {
+    height: 82px;
+    width: 120px;	
+    background: rgb(205, 55, 55);
+    border: 0;
+	text-align: center;
+	display: block;
+	transition: all .3s ease .1s;
+}
+.event-list-item-date .event-date {
+    border: 2px solid #f8f8f8;
+    background-image: url(../images/dashed.png);
+    text-align: center;
+    height: 100px;
+    width: 95px;
+    display: block;
+    margin-top: 3px;
+	padding-top:12px;
+}
+.event-list-item-date span.event-day {
+    padding-top: 24px;
+    font-weight: normal;
+	font-size:40px;
+	margin-top: 29px;
+}
+
+.event-list-item-date span.event-day, .event-list-item-date span.event-month {
+   color: #fcf8e3;
+}
+.event-list-item-date .event-month {
+    padding-top: 5px;
+    display: block;
+}
+.hover-yellow{
+	font-size:15px;
+	font-weight:500;
+}
+span.event-month {
+    color: #0e419c;
+}
+
+.event-time {
+	font-size:8px;
+	
+}
+.event-location-address{
+	font-size:10px;
+}
+.lined-info {
+    padding: 0;
+}
 .pannelOpactiy{
-	background-color:rgba(0, 0, 0, 0.3) !important;
-	opacity:0.8;
+	background-color:#f5f5f5 !important;
+	opacity:0.98;
+	border:none;
 	
 }
 .panelheading{
     border-top-left-radius:0px !important;
     border-top-right-radius:0px !important;	
-	opacity:0.9;
+	opacity:0.98;
+	border:0px
 }
 
 .panelheadingLeft{
-    opacity:0.9;
+	background-color:#f8f8f8;
+    opacity:0.98;
     border-top-right-radius:0px !important;	
 }
 
 .panelheadingRight{
-	opacity:0.9;
+	opacity:0.95;
     border-top-left-radius:0px !important;	
 }
 .panelCol2{
@@ -258,9 +326,10 @@ footer .link{
 	padding-right:10px;
 }
 .mytitle{
-	color:#fff;
-	font-family:微软雅黑;
-	font-size:16px
+	color:rgba(206, 27, 27, 0.85);
+	font-family:仿宋;
+	font-size:20px;
+	font-weight:500px;
 }
 .subList{
 	color:#fff !important;
