@@ -334,3 +334,7 @@ footer .link{
 .subList{
 	color:#fff !important;
 }
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: none; 
+}
