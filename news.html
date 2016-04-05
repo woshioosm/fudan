@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
 	<link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -38,8 +38,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
-    <div class="navbar-wrapper">
-      <div class="container"  style="padding-left:0px;padding-right0px">
+    
       <div class="container">
 	    <header class="header  clearfix navbar navbar-fixed-top" style="background-color:rgba(0, 0, 0, 0.4380392);margin-bottom:0px;padding-bottom:0px;padding-top:0px">
 			<div class="container">
@@ -52,7 +51,7 @@
 
 							<!-- logo -->
 							<div class="logo smooth-scroll" style="margin-bottom:0px">
-								<a href="#banner"><img id="logo" src="img/logo.png" alt="Worthy"></a>
+								<a href="index.html"><img id="logo" src="img/logo.png" alt="Worthy"></a>
 							</div>
 
 							<!-- name-and-slogan -->
@@ -104,7 +103,7 @@
                                                       <li style="margin-top:3px"><a class="subList" href="#">照片资料</a></li>
                                                     </ul>
                                                 </li>
-												<li><a href="#clients">关于我们</a></li>
+												<li><a href="aboutus.html">关于我们</a></li>
 											</ul>
 										</div>
 
@@ -122,16 +121,28 @@
 				</div>
 			</div>
 		</header>
-	 </div>
-	
-
-        <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-top: 200px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
+	 </div>    	  
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-inner" role="listbox" >
+        <div class="item active">
+          <img id="slider" class="first-slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+	  <div class="container" style="margin-top:-320px;padding-left:0px">
+	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
          <h1 class="subTitle"><b>新闻·News</b></h1>
 		</div>
-		
-	    <div class="container" style="margin-top:0px">
+	  </div>
+	  <div class="container" style="margin-top:0px">
             <div class="row">
-              <div id="leftContent" class="col-md-9 panelCol2">
+              <div class="col-md-9 panelCol2">
 		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
                     <div class="panel-heading" style="background-color:#f8f8f8;border:none">             
                        <div class="clearfix"></div>
@@ -146,9 +157,8 @@
 								           <div class="content">
 								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
 								                   <div class="view-content">
-								                   
-								                       
-								                          <div id="view1" class="clearfix">
+								                   								                       
+								                        <div id="view1" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
 															       <div>March 09, 2016</div>
@@ -167,7 +177,7 @@
 								                        
 								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
 								                       	
-								                         <div id="view2" class="clearfix">
+								                        <div id="view2" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
 															       <div>March 09, 2016</div>
@@ -184,9 +194,9 @@
 															  
 								                          </div>
 														  
-								                       <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
 								                       	
-								                         <div id="view2" class="clearfix">
+								                        <div id="view2" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
 															       <div>March 09, 2016</div>
@@ -224,8 +234,8 @@
                  </div> <!-- /.panel -->    		    
 	           </div><!-- /.col-sm-9 -->
 
-	          <div id="rightContent" class="col-md-3" style="padding-left:0px;padding-right:15px">		
-		  <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-left:-50px;padding-right:50px">
+	          <div class="col-md-3" style="padding-left:0px;padding-right:15px">		
+		        <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-left:-50px;padding-right:50px">
             <div class="panel-heading" style="background-color:#f8f8f8;border:none">
                 <!--<i class="fa fa-link"></i>-->
                 
@@ -254,14 +264,13 @@
 			</div>
           </div>  
          
-        </div><!-- /.col-sm-4 -->
+              </div><!-- /.col-sm-3 -->
              </div> <!--row-->
    
 	        <br><br>
          
          </div>  
-        
-      </div>
+
 	  <footer>
 		   <div id="footer">
               <section style="width:100%">
@@ -293,21 +302,9 @@
 		      </p>
            </div>
         </footer>   
-    </div>
+   
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-inner" role="listbox" >
-        <div class="item active">
-          <img id="slider" class="first-slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
+   
 
 	 
  <!-- Carousel
