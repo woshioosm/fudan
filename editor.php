@@ -1,3 +1,23 @@
+<?php
+	$htmlData = '';
+	$title='';
+	if (!empty($_POST['newstype'])) {
+		$title=$_POST['newstype'];
+	}
+	$time = time();	
+	$timeStr=date("Y-m-d",$time); //2010-08-29
+	if (!empty($_POST['content1'])) {
+		if (get_magic_quotes_gpc()) {
+			$htmlData = stripslashes($_POST['content1']);
+		} else {
+			$htmlData = $_POST['content1'];
+		}
+		echo "<script type='text/javascript'>alert('保存成功');</script>";
+		//header('Location: news.html?message=$message');
+		//exit();
+	}
+	
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

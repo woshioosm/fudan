@@ -1,5 +1,8 @@
 <?php
 	$htmlData = '';
+	$title=$_POST['newstype'];
+    $time = time();
+    $timeStr = date("Y-m-d",$time); //2010-08-29
 	if (!empty($_POST['content1'])) {
 		if (get_magic_quotes_gpc()) {
 			$htmlData = stripslashes($_POST['content1']);
@@ -168,12 +171,12 @@
 								                          <div id="view1" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
-															       <div><?php echo "March 09, 2016"?></div>
+															       <div><?php echo $timeStr ?></div>
 																 </div>
 																 <div>															     
 																    <h2 style="font-size: 35px;margin-top:6px">
 															           <a href="#" class="TitlePreview">
-																	   <?php echo "中国海关史与海关文献国际研究中心成立（光明日报）"?>
+																	   <?php echo $title ?>
 																	   </a>
 																    </h2>
 																 </div>
