@@ -1,3 +1,14 @@
+<?php
+	$htmlData = '';
+	if (!empty($_POST['content1'])) {
+		if (get_magic_quotes_gpc()) {
+			$htmlData = stripslashes($_POST['content1']);
+		} else {
+			$htmlData = $_POST['content1'];
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -153,14 +164,26 @@
 								           <div class="content">
 								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
 								                   <div class="view-content">
-								                   
-								                       
+								                   							                       
 								                          <div id="view1" class="clearfix">
-								                            <div class="group-center">								                           
-																<?php include("kindeditor/editor.php"); ?>
-															</div>    
+								                            <div class="group-right">								                           
+															     <div>
+															       <div><?php echo "March 09, 2016"?></div>
+																 </div>
+																 <div>															     
+																    <h2 style="font-size: 35px;margin-top:6px">
+															           <a href="#" class="TitlePreview">
+																	   <?php echo "中国海关史与海关文献国际研究中心成立（光明日报）"?>
+																	   </a>
+																    </h2>
+																 </div>
+																
+																 <div class="newsAbstract">
+																   <?php echo $htmlData?>
+																 </div>
+														    </div>    
 															  
-								                          </div>
+								                          </div> <!-- view1 -->
 								                        
 								                        
 								                       

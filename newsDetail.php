@@ -170,7 +170,7 @@
 																 </div>
 														    </div>    
 															  
-								                          </div>
+								                          </div> <!-- view1 -->
 								                        															
 								                   </div>
 								               </div>
