@@ -7,18 +7,18 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/ico.jpg">
+    <link rel="icon" href="resource/img/ico.jpg">
 
     <title>复旦大学海关史与海关文献国际研究中心欢迎您</title>
 
     <!-- Bootstrap core CSS -->
-	<link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
+	<link href="resource/css/style.css" rel="stylesheet">
+    <link href="resource/css/bootstrap.css" rel="stylesheet">
+    <link href="resource/css/base.css" rel="stylesheet">
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./js/ie-emulation-modes-warning.js"></script>
+    <script src="resource/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -27,7 +27,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="resource/css/carousel.css" rel="stylesheet">
 		<!--[if IE 8]><body class="ie">
 	  <style type="text/css">
              #rightContent{ padding-right:0px !important;}
@@ -39,9 +39,9 @@
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
     
-    <div class="container">
+     <div class="container">
 	  <?php include("header.php") ?>
-	 </div>  
+	 </div>    
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
@@ -90,11 +90,57 @@
 																 </div>
 														    </div>    
 															  
-								                          </div> <!-- view1 -->
-								                        															
+								                          </div>
+								                        
+								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+								                       	
+								                        <div id="view2" class="clearfix">
+								                            <div class="group-right">								                           
+															     <div>
+															       <div>March 09, 2016</div>
+																 </div>
+																 <div>															     
+																    <h2 style="font-size: 35px;margin-top:6px">
+															           <a href="#" class="TitlePreview">中国海关史与海关文献国际研究中心成立（光明日报）</a>
+																    </h2>
+																 </div>
+																
+																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
+																 </div>
+														    </div>    
+															  
+								                          </div>
+														  
+								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+								                       	
+								                        <div id="view2" class="clearfix">
+								                            <div class="group-right">								                           
+															     <div>
+															       <div>March 09, 2016</div>
+																 </div>
+																 <div>															     
+																    <h2 style="font-size: 35px;margin-top:6px">
+															           <a href="#" class="TitlePreview" >中国海关史与海关文献国际研究中心成立（光明日报）</a>
+																    </h2>
+																 </div>
+																
+																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
+																 </div>
+														    </div>    
+															  
+								                          </div>
+								                   
 								                   </div>
 								               </div>
 								           </div>
+										  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+								          <h2 style="display:none">Pages</h2><div class="item-list">
+										  <ul class="pager"><li class="pager-current first">1</li>
+								             <li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>
+								             <li> <a title="Go to next page" href="/news?page=1">next ›</a></li>
+								             <li> <a title="Go to last page" href="/news?page=1">last »</a></li>
+								          </ul>
+								       </div>  
 								       </div>
 								      
 								   </section>
@@ -192,20 +238,20 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
 	var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
-   bodyBgs[0] = "img/banner9.png";
-   bodyBgs[1] = "img/banner2.jpg";
-   bodyBgs[2] = "img/banner2.png";
-   bodyBgs[3] = "img/banner9.png";
-   bodyBgs[4] = "img/banner8.jpg";
+   bodyBgs[0] = "resource/img/banner9.png";
+   bodyBgs[1] = "resource/img/banner2.jpg";
+   bodyBgs[2] = "resource/img/banner2.png";
+   bodyBgs[3] = "resource/img/banner9.png";
+   bodyBgs[4] = "resource/img/banner8.jpg";
    var randomBgIndex = Math.round( Math.random() * 4 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
 </script>
