@@ -21,9 +21,9 @@
     <script src="./js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="./js/respond.js"></script>
+    <script src="./js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Custom styles for this template -->

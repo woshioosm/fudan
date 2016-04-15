@@ -21,27 +21,27 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/ico.jpg">
+    <link rel="icon" href="resource/img/ico.jpg">
 
     <title>复旦大学海关史与海关文献国际研究中心欢迎您</title>
 
     <!-- Bootstrap core CSS -->
-	 <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
+	 <link href="resource/css/style.css" rel="stylesheet">
+    <link href="resource/css/bootstrap.css" rel="stylesheet">
+    <link href="resource/css/base.css" rel="stylesheet">
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./js/ie-emulation-modes-warning.js"></script>
+    <script src="resource/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="./js/respond.js"></script>
+    <script src="./js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Custom styles for this template -->
-   <link href="css/carousel.css" rel="stylesheet">
+   <link href="resource/css/carousel.css" rel="stylesheet">
 	<!--[if IE 8]><body class="ie">
 	  <style type="text/css">
              #contentView{ padding-right:0px;}
@@ -63,7 +63,7 @@
 
 							<!-- logo -->
 							<div class="logo smooth-scroll" style="margin-bottom:0px">
-								<a href="index.html"><img id="logo" src="img/logo.png" alt="Worthy"></a>
+								<a href="index.html"><img id="logo" src="resource/img/logo.png" alt="Worthy"></a>
 							</div>
 
 							<!-- name-and-slogan -->
@@ -241,9 +241,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
