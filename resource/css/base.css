@@ -5,6 +5,10 @@
     border-top-right-radius:0px !important;	
 	
 }
+.panel-heading { 
+    border-bottom: 0px solid transparent;
+}
+
 header {
 	background-color:rgba(0, 0, 0, 0.4380392);
 	margin-bottom:0px;padding-bottom:0px;

@@ -1,3 +1,7 @@
+<?php
+require("code/util/mysql.php");
+$result = PdoMysql::getInstance()->getPeople();
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN">
@@ -77,53 +81,52 @@
 												     <div id="viewTitle1" class="TitlePreview" style="font-size:30px;margin-left:10px;margin-bottom:20px">
 													   中心主任
 													 </div>
+													
 												     <div id="view1" class="clearfix">
 													   <ul class="peopleList">
-                                                         <li>
+													    <?php
+													   
+                                                        foreach ($result as $people) {
+															if($people["level"]==1){
+													    ?>
+                                                          <li>
 														   <div style="float:left;width:190px">
-														    <a class="fancybox" href="#inline" ><img  src="resource/img/people/wusongdi2.jpg" class="peopleImg img-thumbnail"></img></a>
-                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px">吴松弟</span>
-															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px">复旦大学</span>
+														    <a class="fancybox" href="#inline" onclick="setCurrent(<?php echo $people["id"]?>);">
+															<img  src="resource/img/people/<?php echo $people["img"]?>.jpg" class="peopleImg img-thumbnail"></img>
+															</a>
+                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px"><?php echo $people["name"]?></span>
+															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px"><?php echo $people["department"]?></span>
 														   </div>														
 														 </li>
-											             
+											             <?php
+															} }
+													     ?>
                                                        </ul>	
 													 </div>
-													  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+													 
+													 <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
 													   <div id="viewTitle2" class="TitlePreview" style="font-size:30px;margin-left:10px;margin-bottom:20px">
 													   中心成员<span style="font-size:15px">（排名不分先后）</span>
 													 </div>
 													 <div id="view2" class="clearfix">
 													  <ul class="peopleList">
-													     <li>
+													      <?php
+													   
+                                                        foreach ($result as $people) {
+															if($people["level"]==2){
+													    ?>
+                                                         <li>
 														   <div style="float:left;width:190px">
-														     <a class="fancybox" href="#inline" ><img  src="resource/img/people/wusongdi2.jpg" class="peopleImg img-thumbnail"></img></a>
-                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px">吴松弟</span>
-															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px">复旦大学</span>
+														    <a class="fancybox" href="#inline" onclick="setCurrent(<?php echo $people["id"]?>);">
+															<img  src="resource/img/people/<?php echo $people["img"]?>.jpg" class="peopleImg img-thumbnail"></img>
+															</a>
+                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px"><?php echo $people["name"]?></span>
+															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px"><?php echo $people["department"]?></span>
 														   </div>														
 														 </li>
-														 <li>
-														   <div style="float:left;width:190px">
-														    <img  src="resource/img/book1.png" class="peopleImg img-thumbnail"></img>
-                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px">吴松弟</span>
-															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px">复旦大学</span>
-														   </div>														
-														 </li>
-														  <li>
-														   <div style="float:left;width:190px">
-														    <img  src="resource/img/book1.png" class="peopleImg img-thumbnail"></img>
-                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px">吴松弟</span>
-															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px">复旦大学</span>
-														   </div>														
-														 </li>
-														  <li>
-														   <div style="float:left;width:190px">
-														    <img  src="resource/img/book1.png" class="peopleImg img-thumbnail"></img>
-                                                            <span style="width:190px;float:left;font-size:25px;margin:8px 0px 0px 5px">吴松弟</span>
-															<span style="width:190px;float:left;font-size:16px;margin:8px 0px 0px 5px">复旦大学</span>
-														   </div>	
-													
-														 </li>
+											             <?php
+															} }
+													     ?>
 													  </ul>	
 													 </div>								                       							                   
 								                   </div>
@@ -208,22 +211,22 @@
 	   
      <!-- hidden inline form --> 
     <div id="inline" class="mode" style="width:600px;height:350px;overflow:hidden;margin-left:15px;margin-top:15px;display:none; ">
-<img class="img-thumbnail" style="height:300px;float:left" src="resource/img/people/wusongdi.jpg"> </img>
-<div style="width:260px;float:left;margin-left:40px">
+<img id="peopleImg" class="img-thumbnail" style="height:300px;float:left;margin-top:10px" src="resource/img/people/wusongdi2.jpg"> </img>
+<div style="width:280px;float:left;margin-left:40px">
   <div style="margin-top:10px"> 
-      <span style="font-size:30px;margin-top:5px">吴松弟</span> <span style="font-size:15px">教授</span>
+      <span id="peopleName" style="font-size:30px;margin-top:5px">吴松弟</span> <span id="peopleTitle" style="font-size:15px">教授</span>
    </div>
-  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+  <hr class="featurette-divider" style="margin: 10px 0px 10px 0px">
   <div style="margin-top:2px"> 
-       <p style="font-size:15px">复旦大学中国历史地理研究所教授、复旦海关史中心主任</p>
+       <p style="font-size:15px" id="peopleDep">复旦大学中国历史地理研究所教授、复旦海关史中心主任</p>
   </div>
-  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+  <hr class="featurette-divider" style="margin: 10px 0px 10px 0px">
   <div style="margin-top:2px">
-      <p style="font-size:15px">中国经济史、历史经济地理</p>
+      <p style="font-size:15px" id="peopleRe">中国经济史、历史经济地理</p>
   </div>
-  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+  <hr class="featurette-divider" style="margin: 10px 0px 10px 0px">
   <div style="margin-top:2px">
-	 <p style="font-size:15px">《2014中国区域经济发展报告——中国城市群资源环境承载力》、《2013中国区域经济发展报告——中国城市群的崛起与协调发展》</p>
+	 <p style="font-size:15px" id="peoplePub">《2014中国区域经济发展报告——中国城市群资源环境承载力》、《2013中国区域经济发展报告——中国城市群的崛起与协调发展》</p>
   </div>
   
  </div>
@@ -252,6 +255,27 @@
    bodyBgs[4] = "resource/img/banner8.jpg";
    var randomBgIndex = Math.round( Math.random() * 4 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
+   
+   function setCurrent(id){
+	   $.ajax({ 
+          type: "post", 
+          url: "code/util/getPeopleDetail.php?id="+id, 
+          dataType: "json", 
+          success: function (data) { 
+		          $('#peopleName').html(data["name"]);
+				  $('#peopleTitle').html(data["title"]);
+				  $('#peopleDep').html(data["department2"]);
+				  $('#peopleRe').html(data["research"]);
+			      $('#peoplePub').html(data["publication"]);
+				  $('#peopleImg').attr("src","resource/img/people/"+data["img"]+"2.jpg");
+				  
+                 
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) { 
+                  alert(errorThrown); 
+             } 
+          });
+   }
 </script>
 
 </body></html>

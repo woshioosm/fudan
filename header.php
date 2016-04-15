@@ -9,7 +9,7 @@
 
 							<!-- logo -->
 							<div class="logo smooth-scroll" style="margin-bottom:0px">
-								<a href="index.html"><img id="logo" src="resource/img/logo.png" alt="Worthy"></a>
+								<a href="index.php"><img id="logo" src="resource/img/logo.png" alt="Worthy"></a>
 							</div>
 
 							<!-- name-and-slogan -->

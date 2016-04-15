@@ -1,0 +1,62 @@
+<?php 
+
+class PdoMysql{		
+	public $dbhost = 'localhost';
+ 	public $dbport = '3306';
+ 	public $dbname = 'fudan';
+ 	public $dbuser = 'root';
+ 	public $dbpass = 'fudan123';
+ 	public $charset = 'utf8';
+ 	public $stmt = null;
+ 	public $dbh = null;
+ 	public $connect = true; // 是否長连接
+ 	public $debug = false;
+	private static $_instance = null;
+	 
+	public static function getInstance(){
+		 if (self::$_instance === null) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+	}
+	public function __construct() {
+		$this->dbh = new PDO('mysql:host='.$this->dbhost.';dbname='.$this->dbname.';port='.$this->dbport,
+		$this->dbuser, $this->dbpass, array(PDO::ATTR_PERSISTENT=>true));    		
+        $this->dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);   
+        $this->dbh->exec("SET CHARACTER SET ".$this->charset);  
+	}
+	private function __clone() {}
+	
+	public function query($strSql, $queryMode = 'All', $debug = false){
+        if ($debug === true) $this->debug($strSql);
+        $recordset = $this->dbh->query($strSql);
+       
+        if ($recordset) {
+            $recordset->setFetchMode(PDO::FETCH_ASSOC);
+            if ($queryMode == 'All') {
+                $result = $recordset->fetchAll();
+            } elseif ($queryMode == 'Row') {
+                $result = $recordset->fetch();
+            }
+        } else {
+            $result = null;
+        }
+        return $result;
+    }
+	
+	public function getPeople(){
+		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_people');
+		$this->stmt->setFetchMode(PDO::FETCH_ASSOC);
+		$this->stmt->execute();		
+		return $this->stmt->fetchAll();
+	}
+	public function getPeopleDetail($id){
+		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_people where id=:id');
+		$this->stmt->bindValue(':id', $id, PDO::PARAM_INT);
+		$this->stmt->setFetchMode(PDO::FETCH_ASSOC);
+		$this->stmt->execute();		
+		return $this->stmt->fetchAll();
+	}
+}
+
+?>  
