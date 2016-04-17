@@ -1,3 +1,7 @@
+<?php
+require("code/util/mysql.php");
+$result = PdoMysql::getInstance()->getAllNews();
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,8 +26,8 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-    <script src="./js/respond.js"></script>
-    <script src="./js/html5shiv.js"></script>
+    <script src="resource/js/respond.js"></script>
+    <script src="resource/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Custom styles for this template -->
@@ -74,66 +78,37 @@
 								           <div class="content">
 								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
 								                   <div class="view-content">
-								                   								                       
+								                   	  <?php	
+                                                        foreach($result as $news){															
+														
+                                                      ?>													  
 								                        <div id="view1" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
-															       <div>March 09, 2016</div>
+															       <div><?php echo $news["date"]  ?></div>
 																 </div>
 																 <div>															     
 																    <h2 style="font-size: 35px;margin-top:6px">
-															           <a href="#" class="TitlePreview">中国海关史与海关文献国际研究中心成立（光明日报）</a>
+															           <a href="newsDetail.php?id=<?php echo $news["id"] ?>" target="_blank" class="TitlePreview"><?php echo $news["title"]  ?></a>
 																    </h2>
 																 </div>
 																
-																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
+																 <div class="newsAbstract">
+																 <?php echo $news["subContent"]  ?>
+																 <a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
 																 </div>
 														    </div>    
 															  
 								                          </div>
 								                        
 								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
-								                       	
-								                        <div id="view2" class="clearfix">
-								                            <div class="group-right">								                           
-															     <div>
-															       <div>March 09, 2016</div>
-																 </div>
-																 <div>															     
-																    <h2 style="font-size: 35px;margin-top:6px">
-															           <a href="#" class="TitlePreview">中国海关史与海关文献国际研究中心成立（光明日报）</a>
-																    </h2>
-																 </div>
-																
-																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
-																 </div>
-														    </div>    
-															  
-								                          </div>
-														  
-								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
-								                       	
-								                        <div id="view2" class="clearfix">
-								                            <div class="group-right">								                           
-															     <div>
-															       <div>March 09, 2016</div>
-																 </div>
-																 <div>															     
-																    <h2 style="font-size: 35px;margin-top:6px">
-															           <a href="#" class="TitlePreview" >中国海关史与海关文献国际研究中心成立（光明日报）</a>
-																    </h2>
-																 </div>
-																
-																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
-																 </div>
-														    </div>    
-															  
-								                          </div>
-								                   
+								                      <?php	
+													     }
+								                      ?>
 								                   </div>
 								               </div>
 								           </div>
-										  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+										 
 								          <h2 style="display:none">Pages</h2><div class="item-list">
 										  <ul class="pager"><li class="pager-current first">1</li>
 								             <li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>

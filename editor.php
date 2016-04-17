@@ -1,22 +1,45 @@
 <?php
+    require("code/util/mysql.php");
 	$htmlData = '';
 	$title='';
+	$newsType='';
+	$subContent='';
+	$contentDate='';
+	$contentLocation='';
+			
 	if (!empty($_POST['newstype'])) {
-		$title=$_POST['newstype'];
+	    $newsType=$_POST['newstype'];
 	}
-	$time = time();	
-	$timeStr=date("Y-m-d",$time); //2010-08-29
+	if (!empty($_POST['title'])) {
+		$title=$_POST['title'];
+	}
+	if (!empty($_POST['contentLocation'])) {
+		$contentLocation=$_POST['contentLocation'];
+	}
+	if (!empty($_POST['date']) && !empty($_POST['time'])) {
+		
+	}
+	if (!empty($_POST['subContent'])) {
+		$subContent=$_POST['subContent'];
+	}
+	
+	
 	if (!empty($_POST['content1'])) {
 		if (get_magic_quotes_gpc()) {
 			$htmlData = stripslashes($_POST['content1']);
 		} else {
 			$htmlData = $_POST['content1'];
 		}
-		echo "<script type='text/javascript'>alert('保存成功');</script>";
-		//header('Location: news.html?message=$message');
-		//exit();
+		
+			
 	}
-	
+		
+	if (!empty($_POST['newstype'])) {  
+		$newsType=$_POST['newstype'];
+		$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentDate,$contentLocation);	
+		echo "<script type='text/javascript'>alert('save successfully');window.location.href='news.php' </script>";	
+		exit();
+	}
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
@@ -159,7 +182,7 @@
     <script src="resource/js/bootstrap.min.js"></script>
     <script src="resource/js/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <!--<script src="./js/holder.min.js"></script>-->
+    <!--<script src="resource/js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">	

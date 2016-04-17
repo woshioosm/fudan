@@ -27,8 +27,8 @@ $result = PdoMysql::getInstance()->getPeople();
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-    <script src="./js/respond.js"></script>
-    <script src="./js/html5shiv.js"></script>
+    <script src="resource/js/respond.js"></script>
+    <script src="resource/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Custom styles for this template -->
@@ -160,7 +160,7 @@ $result = PdoMysql::getInstance()->getPeople();
                         <nav class="sidebar-navigation">
                             <ul>
                                 <li  class="active"><a class="sideBar" href="#" >中心主任<span class="sidebarEn">&nbsp Director</span></a></li>
-                                <li><a class="sideBar" href="#">中心成员<span class="sidebarEn">&nbsp Members</span></a></li>
+                                <li><a class="sideBar" href="#viewTitle2">中心成员<span class="sidebarEn">&nbsp Members</span></a></li>
                                
                             </ul>
                         </nav> <!-- /sidebar-navigation -->

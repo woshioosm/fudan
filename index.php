@@ -25,8 +25,8 @@
 
 
 	<!--[if lt IE 9]>
-    <script src="./js/respond.js"></script>
-    <script src="./js/html5shiv.js"></script>
+    <script src="resource/js/respond.js"></script>
+    <script src="resource/js/html5shiv.js"></script>
 	<script type="text/javascript" src="./js/PIE.js"></script>
     <![endif]-->
 	

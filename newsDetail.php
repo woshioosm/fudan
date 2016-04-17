@@ -1,3 +1,18 @@
+<?php
+    require("code/util/urlParam.php");
+    require("code/util/mysql.php");
+	
+	$result;
+	if(isset($_SERVER['REQUEST_URI'])){ 
+	    $url=$_SERVER['REQUEST_URI']; 
+		$params = getParam($url);	
+        if($params==null){
+			$params["id"] = 6;
+		}	
+		$result= PdoMysql::getInstance()->getNews($params["id"])[0];
+	}	
+		
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,46 +22,44 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/ico.jpg">
+    <link rel="icon" href="resource/img/ico.jpg">
 
     <title>复旦大学海关史与海关文献国际研究中心欢迎您</title>
 
     <!-- Bootstrap core CSS -->
-	<link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
+	 <link href="resource/css/style.css" rel="stylesheet">
+    <link href="resource/css/bootstrap.css" rel="stylesheet">
+    <link href="resource/css/base.css" rel="stylesheet">
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./js/ie-emulation-modes-warning.js"></script>
+    <script src="resource/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-    <script src="./js/respond.js"></script>
-    <script src="./js/html5shiv.js"></script>
+    <script src="resource/js/respond.js"></script>
+    <script src="resource/js/html5shiv.js"></script>
     <![endif]-->
-
+	
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-		<!--[if IE 8]><body class="ie">
+   <link href="resource/css/carousel.css" rel="stylesheet">
+	<!--[if IE 8]><body class="ie">
 	  <style type="text/css">
-             #rightContent{ padding-right:0px !important;}
-			 
+             #contentView{ padding-right:0px;}
       </style>
 	<![endif]-->
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
-    
     <div class="container">
 	  <?php include("header.php") ?>
-	 </div>  
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	 </div>
+ 	<div id="myCarousel" class="carousel slide" data-ride="carousel" >
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
-          <img id="slider" class="first-slide" alt="First slide">
+          <img class="first-slide" src="resource/img/banner2.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
              
@@ -54,7 +67,7 @@
           </div>
         </div>
       </div>
-    </div><!-- /.carousel -->
+    </div><!-- /.carousel -->	  
 	  <div class="container" style="margin-top:-320px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
          <h1 class="subTitle"><b>新闻·News</b></h1>
@@ -78,15 +91,17 @@
 								                        <div id="view1" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
-															       <div>March 09, 2016</div>
+															       <div><?php echo $result["date"]  ?></div>
 																 </div>
 																 <div>															     
 																    <h2 style="font-size: 35px;margin-top:6px">
-															           <a href="#" class="TitlePreview">中国海关史与海关文献国际研究中心成立（光明日报）</a>
+															           <a href="#" class="TitlePreview"><?php echo $result["title"]  ?></a>
 																    </h2>
 																 </div>
 																
-																 <div class="newsAbstract">本报上海2月28日电（记者颜维琦、曹继军）27日，复旦大学中国海关史与海关文献国际研究中心正式揭牌成立，将联合世界各地从事中国海关史和海关文献研究的学者，加速海关文献的整理、研究以及数据库的建设，并推动有关文献的出版工作。当天，会上还发布了《美国哈佛大学图书馆藏未刊中国旧海关史料》第二批新书。据该中心主任吴松弟教授介绍，中心将拓展海关史研究范围，将海关文献、海关史与近代中国相关的问题融合起来，解读近代中国的经济与社会。<a href="/features/tamara-chin-awarded-2016-harry-levin-book-prize-savage-exchange-han-imperialism-chinese" class="more-link">更多</a>
+																 <div class="newsAbstract" style="word-break: break-all;word-wrap: break-word;">
+																   <?php echo $result["content"]  ?>
+
 																 </div>
 														    </div>    
 															  
@@ -142,7 +157,8 @@
          
          </div>  
 
-	  <footer>
+   
+   <footer>
 		   <div id="footer">
               <section style="width:100%">
 	            <div class="row" >
@@ -172,40 +188,25 @@
 		        © 2016 复旦大学, 上海. · <a href="">Privacy</a> · <a href="">Terms</a>		
 		      </p>
            </div>
-        </footer>   
-   
+        </footer>    
 
-   
-
-	 
- <!-- Carousel
-    ================================================== -->
-
-
-  
-
-      <!-- FOOTER -->
-
-
-
-	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="resource/js/jquery.min.js"></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <!--<script src="./js/holder.min.js"></script>-->
+    <!--<script src="resource/js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
+    <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">	
 	var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
-   bodyBgs[0] = "img/banner9.png";
-   bodyBgs[1] = "img/banner2.jpg";
-   bodyBgs[2] = "img/banner2.png";
-   bodyBgs[3] = "img/banner9.png";
-   bodyBgs[4] = "img/banner8.jpg";
+   bodyBgs[0] = "resource/img/banner9.png";
+   bodyBgs[1] = "resource/img/banner2.jpg";
+   bodyBgs[2] = "resource/img/banner2.png";
+   bodyBgs[3] = "resource/img/banner9.png";
+   bodyBgs[4] = "resource/img/banner8.jpg";
    var randomBgIndex = Math.round( Math.random() * 4 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
 </script>

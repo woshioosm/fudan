@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>KindEditor PHP</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="resource/css/bootstrap.css" />
 	<link rel="stylesheet" href="kindeditor/themes/default/default.css" />
 	<link rel="stylesheet" href="kindeditor/plugins/code/prettify.css" />
 	<script charset="utf-8" src="kindeditor/kindeditor-all-min.js"></script>
@@ -31,14 +31,21 @@
 			prettyPrint();
 		});
 		
+		function typeSelect(type){
+			if(type==1){
+				$("#otherFun").hide();
+			}else{
+				$("#otherFun").show();
+			}
+		}
 	</script>
 </head>
 <body>
-	<?php echo $htmlData; ?>
+
 	<form  name="editorForm" method="post" action="editor.php" >
 	   <div class="input-group" style="width:800px">
          <div style="height:34px;width:70px;float:left">	          
-           <select name="newstype" style="width:70px;height:34px;font-size:13px">
+           <select name="newstype" style="width:70px;height:34px;font-size:13px" onchange="typeSelect(this.options[this.options.selectedIndex].value)">
              <option value ="1">新闻</option>
              <option value ="2">会议</option>
              <option value="3">通知</option>
@@ -46,6 +53,15 @@
           </select>
          </div><!-- /btn-group -->	   
          <input name="title" type="text" class="form-control" style="margin-left:5px;width:620px;float:left"  placeholder="文章名称" aria-label="...">
+		 <textarea name="subContent" style="margin-left:0px;margin-top:10px;width:696px;float:left"  placeholder="&nbsp&nbsp文章概述" ></textarea>
+         
+		 <div id="otherFun" style="width:700px;float:left;margin-top:10px;display:none">
+		      <input name="contentLocation" type="text" class="form-control" style="margin-left:0px;width:700;float:left;margin-top:10px;margin-bottom:10px"  placeholder="通知的地点" aria-label="...">
+		      <span>选择通知时间:</span><br>
+			  <input type="date" style="margin-top:5px" name="user_date">
+			  <input type="time" style="margin-top:5px" name="user_time">
+	     </div>
+		 
       </div><!-- /input-group -->
 	  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
 		<textarea name="content1" style="width:700px;height:600px;visibility:hidden;"><?php echo htmlspecialchars($htmlData); ?></textarea>
