@@ -4,7 +4,7 @@
 	$title='';
 	$newsType='';
 	$subContent='';
-	$contentDate='';
+	$contentdate='';
 	$contentLocation='';
 			
 	if (!empty($_POST['newstype'])) {
@@ -16,8 +16,8 @@
 	if (!empty($_POST['contentLocation'])) {
 		$contentLocation=$_POST['contentLocation'];
 	}
-	if (!empty($_POST['date']) && !empty($_POST['time'])) {
-		
+	if (!empty($_POST['user_date']) ){
+		$contentdate=$_POST['user_date']." ".$_POST['user_time'];
 	}
 	if (!empty($_POST['subContent'])) {
 		$subContent=$_POST['subContent'];
@@ -36,7 +36,7 @@
 		
 	if (!empty($_POST['newstype'])) {  
 		$newsType=$_POST['newstype'];
-		$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentDate,$contentLocation);	
+		$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
 		echo "<script type='text/javascript'>alert('save successfully');window.location.href='news.php' </script>";	
 		exit();
 	}

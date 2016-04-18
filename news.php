@@ -1,6 +1,8 @@
 <?php
 require("code/util/mysql.php");
-$result = PdoMysql::getInstance()->getAllNews();
+
+$result= PdoMysql::getInstance()->getAllNews(1);
+
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->

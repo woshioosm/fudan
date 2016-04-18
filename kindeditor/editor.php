@@ -48,8 +48,8 @@
            <select name="newstype" style="width:70px;height:34px;font-size:13px" onchange="typeSelect(this.options[this.options.selectedIndex].value)">
              <option value ="1">新闻</option>
              <option value ="2">会议</option>
-             <option value="3">通知</option>
-             <option value="4">讲座</option>
+             <option value="3">讲座</option>
+             <option value="4">活动</option>
           </select>
          </div><!-- /btn-group -->	   
          <input name="title" type="text" class="form-control" style="margin-left:5px;width:620px;float:left"  placeholder="文章名称" aria-label="...">

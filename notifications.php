@@ -1,3 +1,22 @@
+<?php
+require("code/util/mysql.php");
+require("code/util/util.php");
+
+if(isset($_SERVER['REQUEST_URI'])){ 
+	    $url=$_SERVER['REQUEST_URI']; 
+		$params = getParam($url);
+        if($params["type"] ==1){
+				echo "<script type='text/javascript'>window.location.href='news.php' </script>";	
+		}		
+        if($params==null){
+			$params["type"] = 2;
+		}	
+		$type=$params["type"];
+		$result= PdoMysql::getInstance()->getAllNews($type);
+}	
+
+?>
+
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -57,7 +76,17 @@
     </div><!-- /.carousel -->
 	  <div class="container" style="margin-top:-320px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
-         <h1 class="subTitle"><b>新闻·News</b></h1>
+         <h1 class="subTitle"><b>
+		 <?php
+		    if($type==2){
+				echo "会议·Conference";
+			}else if($type==3){
+				echo "讲座· Lectures";
+			}else if($type==4){
+				echo "活动· Activities";
+			}
+		 ?>
+		 </b></h1>
 		</div>
 	  </div>
 	  <div class="container" style="margin-top:0px">
@@ -73,92 +102,45 @@
 								          <div id="block-views-hy-news-news" class="block block-views plain last even">
 								           <div class="content">
 								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
-								                   <div class="view-content">
-								                   								                       
+								                   <div class="view-content">								                   								                       
 								                      <ul class="events-listing-content sort-destination isotope-events" style="padding-left:0px" data-sort-id="events">
-                                                         <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 9px 0px 9px;padding-top:10px;height:110px;">
+                                                         <?php 
+														    foreach($result as $eachResult){
+														 ?>
+														 <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 9px 0px 9px;padding-top:10px;height:110px;">
                                                         <div style="margin-left: 10px;">
                                                           <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
                                                             <span class="event-date">
-                                                              <span class="event-day">05</span>
-                                                              <span class="event-month">四&nbsp&nbsp&nbsp月</span>
+                                                              <span class="event-day"><?php echo getDay($eachResult['contentdate']) ?></span>
+                                                              <span class="event-month"><?php echo getMonth($eachResult['contentdate']).'&nbsp&nbsp&nbsp月' ?></span>
                                                             </span>
                                                           </div>
                                                           <div class="event-list-item-info myevent-list-item" style="padding:1px 0 5px 	5px;">
                                                             <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
                                                               <h4 style="margin-top:0px" >
-                                                                <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">活动:“反家暴.人权.治理”专题研讨沙龙专题研讨沙龙专题研讨沙龙</a>
+                                                                <a class="hover-yellow" href="newsDetail.php?id=<?php echo $eachResult["id"].'&type='.$type ?>" target="_blank"><?php echo $eachResult['title'] ?></a>
                                                               </h4>
                                                             </div>
                                                             <div class="event-list-item-dm">
                                                               <div class="lined-info">
-                                                                <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
+                                                                <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time"><?php echo getTime($eachResult['contentdate']) ?></span></span>
                                                               </div>
                                                               <div class="lined-info event-location">
-                                                                <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                                                                <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address"><?php echo $eachResult['contentLocation'] ?></span></span>
                                                               </div>
                                                             </div>
                                                           </div>
                                                         </div>
                                                       </li>
-					                                   <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
-                                                      <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 9px 0px 9px;padding-top:10px;height:110px;">
-                                                        <div style="margin-left: 10px;">
-                                                          <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
-                                                            <span class="event-date">
-                                                              <span class="event-day">05</span>
-                                                              <span class="event-month">四&nbsp&nbsp&nbsp月</span>
-                                                            </span>
-                                                          </div>
-                                                          <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
-                                                            <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
-                                                              <h4 style="margin-top:0px" >
-                                                                <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">会议:“反家暴.人权.治理”专题研讨沙龙专题研讨沙龙专题研讨沙龙</a>
-                                                              </h4>
-                                                            </div>
-                                                            <div class="event-list-item-dm">
-                                                              <div class="lined-info">
-                                                                <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
-                                                              </div>
-                                                              <div class="lined-info event-location">
-                                                                <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </li>
-					                                   <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
-                                                      <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 9px 0px 9px;padding-top:10px;height:110px;">
-                                                        <div style="margin-left: 10px;">
-                                                          <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
-                                                            <span class="event-date">
-                                                              <span class="event-day">05</span>
-                                                              <span class="event-month">四&nbsp&nbsp&nbsp月</span>
-                                                            </span>
-                                                          </div>
-                                                          <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
-                                                            <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
-                                                              <h4 style="margin-top:0px" >
-                                                                <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">讲座:“反家暴.人权.治理”专题研讨沙龙专题研讨沙龙专题研讨沙龙</a>
-                                                              </h4>
-                                                            </div>
-                                                            <div class="event-list-item-dm">
-                                                              <div class="lined-info">
-                                                                <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
-                                                              </div>
-                                                              <div class="lined-info event-location">
-                                                                <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </li>
-					                                   <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
-					                                 </ul>								                   
+					                                    <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
+														<?php
+															}
+														?>
+           					                          </ul>								                   
 								                   </div>
 								               </div>
 								           </div>
-										  <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+										
 								          <h2 style="display:none">Pages</h2><div class="item-list">
 										  <ul class="pager"><li class="pager-current first">1</li>
 								             <li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>
@@ -191,10 +173,10 @@
 
                         <nav class="sidebar-navigation">
                             <ul>
-                                <li><a class="sideBar" href="#" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
-                                <li><a class="sideBar" href="#">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
-                                <li  class="active"><a class="sideBar" href="#">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
-                                <li><a class="sideBar" href="#">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
+                                <li <?php if($type==1) echo "class='active'" ?>><a class="sideBar" href="#" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
+                                <li <?php if($type==2) echo "class='active'" ?>><a class="sideBar" href="#">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
+                                <li <?php if($type==3) echo "class='active'" ?>><a class="sideBar" href="#">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
+                                <li <?php if($type==4) echo "class='active'" ?>><a class="sideBar" href="#">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
                                
                             </ul>
                         </nav> <!-- /sidebar-navigation -->

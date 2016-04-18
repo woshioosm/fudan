@@ -1,5 +1,5 @@
 <?php
-    require("code/util/urlParam.php");
+    require("code/util/util.php");
     require("code/util/mysql.php");
 	
 	$result;
@@ -8,8 +8,10 @@
 		$params = getParam($url);	
         if($params==null){
 			$params["id"] = 6;
-		}	
+		}
+        $type=$params["type"];
 		$result= PdoMysql::getInstance()->getNews($params["id"])[0];
+		
 	}	
 		
 ?>
@@ -135,11 +137,10 @@
 
                         <nav class="sidebar-navigation">
                             <ul>
-                                <li  class="active"><a class="sideBar" href="#" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
-                                <li><a class="sideBar" href="#">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
-                                <li><a class="sideBar" href="#">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
-                                <li><a class="sideBar" href="#">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
-                               
+                               <li <?php if($type==1) echo "class='active'" ?>><a class="sideBar" href="#" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
+                                <li <?php if($type==2) echo "class='active'" ?>><a class="sideBar" href="#">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
+                                <li <?php if($type==3) echo "class='active'" ?>><a class="sideBar" href="#">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
+                                <li <?php if($type==4) echo "class='active'" ?>><a class="sideBar" href="#">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
                             </ul>
                         </nav> <!-- /sidebar-navigation -->
 

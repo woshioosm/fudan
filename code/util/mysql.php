@@ -57,25 +57,29 @@ class PdoMysql{
 		$this->stmt->execute();		
 		return $this->stmt->fetchAll();
 	}
-	public function saveNews($type,$title,$subContent,$content,$contentDate,$contentLocation){
+	public function saveNews($type,$title,$subContent,$content,$contentdate,$contentLocation){
 		$time = time();	
-		$this->stmt = $this->dbh->prepare("INSERT INTO tb_news (title,type,subContent,content,date,contentDate,contentLocation) VALUES (:title,:type,:subContent,:content,:date,:contentDate,:contentLocation)");
+		$this->stmt = $this->dbh->prepare("INSERT INTO tb_news (title,type,subContent,content,date,contentdate,contentLocation) VALUES (:title,:type,:subContent,:content,:date,:contentdate,:contentLocation)");
 	    $this->stmt->bindValue(':title', $title, PDO::PARAM_STR);
 		$this->stmt->bindValue(':type', $type, PDO::PARAM_INT);
 		$this->stmt->bindValue(':subContent', $subContent, PDO::PARAM_STR);
 		$this->stmt->bindValue(':content', $content, PDO::PARAM_STR);
 		$this->stmt->bindValue(':date', date("Y-m-d",$time));
-		$this->stmt->bindValue(':contentDate', $contentDate);
+		$this->stmt->bindValue(':contentdate', $contentdate);
 		$this->stmt->bindValue(':contentLocation', $contentLocation, PDO::PARAM_STR);
 		return $this->stmt->execute();	
 	}
 	
-	public function getAllNews(){
-		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_news');	
+	
+
+	public function getAllNews($type){
+		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_news where type=:type');
+        $this->stmt->bindValue(':type', $type, PDO::PARAM_INT);		
 		$this->stmt->setFetchMode(PDO::FETCH_ASSOC);
 		$this->stmt->execute();		
 		return $this->stmt->fetchAll();
 	}
+	
 	public function getNews($id){
 		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_news where id=:id');
 		$this->stmt->bindValue(':id', $id, PDO::PARAM_INT);
