@@ -8,8 +8,13 @@
 		$params = getParam($url);	
         if($params==null){
 			$params["id"] = 6;
+			$params["type"] = 1;
 		}
-        $type=$params["type"];
+        if(!isset($params["type"])){
+			$params["type"] = 1;
+		}
+		$type=	$params["type"];
+		 
 		$result= PdoMysql::getInstance()->getNews($params["id"])[0];
 		
 	}	
@@ -137,11 +142,11 @@
 
                         <nav class="sidebar-navigation">
                             <ul>
-                               <li <?php if($type==1) echo "class='active'" ?>><a class="sideBar" href="#" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
-                                <li <?php if($type==2) echo "class='active'" ?>><a class="sideBar" href="#">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
-                                <li <?php if($type==3) echo "class='active'" ?>><a class="sideBar" href="#">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
-                                <li <?php if($type==4) echo "class='active'" ?>><a class="sideBar" href="#">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
-                            </ul>
+                               <li <?php if($type==1) echo "class='active'" ?>><a class="sideBar" href="news.php" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
+                                <li <?php if($type==2) echo "class='active'" ?>><a class="sideBar" href="notifications.php?type=2">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
+                                <li <?php if($type==3) echo "class='active'" ?>><a class="sideBar" href="notifications.php?type=3">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
+                                <li <?php if($type==4) echo "class='active'" ?>><a class="sideBar" href="notifications.php?type=4">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
+                             </ul>
                         </nav> <!-- /sidebar-navigation -->
 
                         
@@ -157,40 +162,11 @@
 	        <br><br>
          
          </div>  
-
+    <?php
+	   include("footer.php");
+	?>
    
-   <footer>
-		   <div id="footer">
-              <section style="width:100%">
-	            <div class="row" >
-	             <div class="col-sm-5">
-                   <p class="link">
-	   	               <b>友情链接: </b>
-		               <br>
-		               <a href="http://www.customsmuseum.cn/" target="_blank">中国海关博物馆</a>
-		               <a href="http://www.shac.net.cn/" target="_blank">南京第二历史档案馆</a>		 
-		               <br>
-		               <a href="http://hcl.harvard.edu/libraries/harvard-yenching/" target="_blank">哈佛燕京图书馆</a>	 
-		                <a href="http://yugong.fudan.edu.cn/" target="_blank">复旦大学中国历史地理研究所</a>
-		               <br>
-		               <a href="http://www.soas.ac.uk/" target="_blank">伦敦大学亚非学院</a>
-		               <a href="http://www.fas.harvard.edu/~chgis/" target="_blank">哈佛地理空间研究中心</a>
-		               <br>
-	                   <a href="https://www.bris.ac.uk/history/customs/resources/archives/" target="_blank">布里斯托尔大学近代海关史项目</a>
-		            </p>
-	             </div>
-	             <div class="col-sm-7">
-                    <p class="info" style="margin-top:40px"> 复旦大学·海关史与海关文献国际研究中心 （口岸·中国·世界）</p>
-		            <p class="info">上海市杨浦区邯郸路220号</p>
-	             </div>
-	            </div>	
-	          </section>
-              <p class="copyright">
-		        © 2016 复旦大学, 上海. · <a href="">Privacy</a> · <a href="">Terms</a>		
-		      </p>
-           </div>
-        </footer>    
-
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

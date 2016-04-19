@@ -389,7 +389,7 @@
 		    <img class="img-circle" src="resource/img/vip.png" alt="Generic placeholder image" width="140" height="140">
            </a>
 		  <h2>中心成员</h2>
-          <p>成为中心会员，可以参与讨论并获得丰富的研究资料和数据 euismod. Nullam id dolor id nibh vehicula ut ututid elit. Morbi leo risus, porta ac  ac, vestibulum at eros. Praesent .</p>
+          <p>参与讨论并获得研究资料和数据 </p>
           <p><a class="btn btn-default" href="" role="button" data-toggle="modal" data-target="#myModal"> 登录注册 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-4" style="text-align:center">
@@ -397,57 +397,26 @@
 		     <img class="img-circle" src="resource/img/map.png" alt="Generic placeholder image" width="140" height="140">
 		   </a>
           <h2>中心地址</h2>
-          <p>中心位于复旦大学某路某学院 porttitoporttitorporttitorr ligula, odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor .</p>
-          <p><a class="btn btn-default" href="" role="button">具体地址 »</a></p>
+          <p>中心位于杨浦区邯郸路220号</p>
+          <p><a class="btn btn-default" href="" role="button">地图位置 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-4" style="text-align:center">
 		  <a href="">
             <img class="img-circle" src="resource/img/cooperation.png" alt="Generic placeholder image" width="140" height="140">
           </a>
 		  <h2>联系·合作</h2>
-          <p>参与中心的合作项目，共同发展, dapibus ac facilisis in, egestas eget quam.  id felis euismod  dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa .</p>
+          <p>参与中心的合作项目，共同发展.</p>
           <p><a class="btn btn-default" href="" role="button">参与合作 »</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-
 
       <!-- START THE FEATURETTES -->
       <br><br>	  
       </div>	  
       <!-- FOOTER -->
-	 <footer>
-		   <div id="footer">
-              <section style="width:100%">
-	            <div class="row" >
-	             <div class="col-sm-5">
-                   <p class="link">
-	   	               <b>友情链接: </b>
-		               <br>
-		               <a href="http://www.customsmuseum.cn/" target="_blank">中国海关博物馆</a>
-		               <a href="http://www.shac.net.cn/" target="_blank">南京第二历史档案馆</a>		 
-		               <br>
-		               <a href="http://hcl.harvard.edu/libraries/harvard-yenching/" target="_blank">哈佛燕京图书馆</a>	 
-		                <a href="http://yugong.fudan.edu.cn/" target="_blank">复旦大学中国历史地理研究所</a>
-		               <br>
-		               <a href="http://www.soas.ac.uk/" target="_blank">伦敦大学亚非学院</a>
-		               <a href="http://www.fas.harvard.edu/~chgis/" target="_blank">哈佛地理空间研究中心</a>
-		               <br>
-	                   <a href="https://www.bris.ac.uk/history/customs/resources/archives/" target="_blank">布里斯托尔大学近代海关史项目</a>
-		            </p>
-	             </div>
-	             <div class="col-sm-7">
-                    <p class="info" style="margin-top:40px"> 复旦大学·海关史与海关文献国际研究中心 （口岸·中国·世界）</p>
-		            <p class="info">上海市杨浦区邯郸路220号</p>
-	             </div>
-	            </div>	
-	          </section>
-              <p class="copyright">
-		        © 2016 复旦大学, 上海. · <a href="">Privacy</a> · <a href="">Terms</a>		
-		      </p>
-           </div>
-        </footer>   
-
-	  
+	<?php
+	   include("footer.php");
+	?> 
 	  <!-- 模态框（Modal） -->
  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">

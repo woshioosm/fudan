@@ -87,6 +87,22 @@ class PdoMysql{
 		$this->stmt->execute();		
 		return $this->stmt->fetchAll();
 	}
+	
+	public function getAllPublications($type){
+		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_publication where type=:type');
+        $this->stmt->bindValue(':type', $type, PDO::PARAM_INT);		
+		$this->stmt->setFetchMode(PDO::FETCH_ASSOC);
+		$this->stmt->execute();		
+		return $this->stmt->fetchAll();
+	}
+	
+	public function getPublictaion($id){
+		$this->stmt = $this->dbh->prepare('SELECT * FROM tb_publication where id=:id');
+        $this->stmt->bindValue(':id', $id, PDO::PARAM_INT);		
+		$this->stmt->setFetchMode(PDO::FETCH_ASSOC);
+		$this->stmt->execute();		
+		return $this->stmt->fetchAll();
+	}
 }
 
 ?>  

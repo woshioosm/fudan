@@ -57,13 +57,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
   </head>
 
   <body tabindex="1" class="loadingInProgress">
-    <div id="books" style="width:100%;height:200px;display:none">
-	  <a href="javascript:open()" style="color:#fff;text-decoration:none"> 某另一篇文章</a>
-	   <ul class="bookList">
-
-	   </ul>
-	 
-	</div>
+ 
     <div id="outerContainer">
 
       <div id="sidebarContainer">
@@ -190,9 +184,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
 				
 				<div class="toolbarButtonSpacer"></div>
 				<div class="toolbarButtonSpacer"></div>
-				<a Style="margin-top:6px;cursor:pointer;color:#fff;text-decoration: none;" href="javascript:openAndClose()">
-                  <span id="morePaper" style="font-size:12px">查看更多文章>></span>
-                </a>
+				
                 <div class="toolbarButtonSpacer"></div>
               </div>
               <div id="toolbarViewerRight">
@@ -440,28 +432,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
   </div>
 </div>
 
-<script type="text/javascript"> 
-   function  openAndClose(){
-      if( document.getElementById("books").style["display"]=="none"){
-	     document.getElementById("books").style["display"]="";	
-		 document.getElementById("morePaper").innerText="关闭上边栏";	
-	  }else{
-	     document.getElementById("books").style["display"]="none";	
-         document.getElementById("morePaper").innerText="查看更多文章>>";		 
-	  }
-   }
-   function close()
-   {  
-      document.getElementById("books").style["display"]="none";	  
-   }
-   function open()
-   {  
-      var url="123.pdf";
-       PDFViewerApplication.open(url, 0);
-	   document.getElementById("books").style["display"]="none";	
-       document.getElementById("morePaper").innerText="查看更多文章>>";	
-   }
-</script>
+
 
   </body>
 </html>

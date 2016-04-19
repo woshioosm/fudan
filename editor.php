@@ -143,38 +143,9 @@
                  </div> <!-- /.panel -->    		    
 	           </div><!-- /.col-sm-9 -->
              </div> <!--row-->      
-    <footer>
-		   <div id="footer">
-              <section style="width:100%">
-	            <div class="row" >
-	             <div class="col-sm-5">
-                   <p class="link">
-	   	               <b>友情链接: </b>
-		               <br>
-		               <a href="http://www.customsmuseum.cn/" target="_blank">中国海关博物馆</a>
-		               <a href="http://www.shac.net.cn/" target="_blank">南京第二历史档案馆</a>		 
-		               <br>
-		               <a href="http://hcl.harvard.edu/libraries/harvard-yenching/" target="_blank">哈佛燕京图书馆</a>	 
-		                <a href="http://yugong.fudan.edu.cn/" target="_blank">复旦大学中国历史地理研究所</a>
-		               <br>
-		               <a href="http://www.soas.ac.uk/" target="_blank">伦敦大学亚非学院</a>
-		               <a href="http://www.fas.harvard.edu/~chgis/" target="_blank">哈佛地理空间研究中心</a>
-		               <br>
-	                   <a href="https://www.bris.ac.uk/history/customs/resources/archives/" target="_blank">布里斯托尔大学近代海关史项目</a>
-		            </p>
-	             </div>
-	             <div class="col-sm-7">
-                    <p class="info" style="margin-top:40px"> 复旦大学·海关史与海关文献国际研究中心 （口岸·中国·世界）</p>
-		            <p class="info">上海市杨浦区邯郸路220号</p>
-	             </div>
-	            </div>	
-	          </section>
-              <p class="copyright">
-		        © 2016 复旦大学, 上海. · <a href="">Privacy</a> · <a href="">Terms</a>		
-		      </p>
-           </div>
-        </footer>    
-
+   <?php
+	   include("footer.php");
+	?>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
