@@ -5,7 +5,7 @@ class PdoMysql{
  	public $dbport = '3306';
  	public $dbname = 'fudan';
  	public $dbuser = 'root';
- 	public $dbpass = 'fudan123';
+ 	public $dbpass = 'whu2011134';
  	public $charset = 'utf8';
  	public $stmt = null;
  	public $dbh = null;

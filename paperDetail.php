@@ -15,7 +15,8 @@
 		}
 		$type=	$params["type"];
 		 
-		$paper= PdoMysql::getInstance()->getPublictaion($params["id"])[0];
+		$paper= PdoMysql::getInstance()->getPublictaion($params["id"]);
+                $paper = $paper[0];
 		
 	}	
 		
