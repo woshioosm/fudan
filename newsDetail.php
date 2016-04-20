@@ -15,8 +15,8 @@
 		}
 		$type=	$params["type"];
 		 
-		$result= PdoMysql::getInstance()->getNews($params["id"])[0];
-		
+		$result= PdoMysql::getInstance()->getNews($params["id"]);
+		$result = $result[0];
 	}	
 		
 ?>
