@@ -29,9 +29,9 @@
                 <div class="footer-col col-md-4" style="font-size:12px;padding-left:30px;padding-right:30px;text-align:center;color: #cccccc">
                     <div class="footer-col-inner">
                         <h3 style="text-align:center">联系我们</h3>
-						<span class="glyphicon glyphicon-map-marker"></span>&nbsp上海杨浦区邯郸路220号               
-						<p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp0215345690</p>
-					    <span class="glyphicon glyphicon-envelope"></span>&nbsp haiguan@fudan.edu
+						<p><span class="glyphicon glyphicon-map-marker"></span>&nbsp上海杨浦区邯郸路220号   </p>            
+						<p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp0215345690 </p>
+					    <p><span class="glyphicon glyphicon-envelope"></span>&nbsp haiguan@fudan.edu</p>
                     </div><!--//footer-col-inner-->            
                 </div><!--//foooter-col-->   
                 </div>   
