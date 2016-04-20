@@ -70,7 +70,8 @@
 	    	$params = getParam($url);	
             if($params!=null){
 				$id= $params["id"];
-	    	    $result= PdoMysql::getInstance()->getNews($params["id"])[0];
+	    	    $result= PdoMysql::getInstance()->getNews($params["id"]);
+				$result=$result[0];
 			    $title = $result['title'];
 			    $subContent = $result['subContent'];
 	    	    $htmlData = $result['content'];
