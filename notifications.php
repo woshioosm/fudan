@@ -94,7 +94,7 @@ if(isset($_SERVER['REQUEST_URI'])){
               <div class="col-md-9 panelCol2">
 		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">                   
                     <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
-			            <div class="wrapper" style="padding-top:0px">
+			            <div class="wrapper" style="padding:0px 20px 0px 80px">
                               <a name="main-content" class="top-anchor"></a>                                    
                                    <section class="region region-content">
 								       <div class="ds-1col node node-page view-mode-full clearfix">
@@ -103,36 +103,36 @@ if(isset($_SERVER['REQUEST_URI'])){
 								           <div class="content">
 								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
 								                   <div class="view-content">								                   								                       
-								                      <ul class="events-listing-content sort-destination isotope-events" style="padding-left:0px" data-sort-id="events">
+								                      <ul class="events-listing-content sort-destination isotope-events" style="padding-left:0px;margin-top:20px" data-sort-id="events">
                                                          <?php 
 														    foreach($result as $eachResult){
 														 ?>
-														 <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 9px 0px 9px;padding-top:10px;height:110px;">
+														 <li class="event-list-item dashed-bottom-bordered" style="width: 95%;margin:3px 0px 0px 9px;padding-top:0px;height:110px;">
                                                         <div style="margin-left: 10px;">
-                                                          <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
-                                                            <span class="event-date">
+                                                          <div class="event-list-item-date" style="width: 140px;height: 100px;overflow: hidden;margin-right: 5px;">
+                                                            <span class="event-date" style="width:130px;height:90px;padding:19px">
                                                               <span class="event-day"><?php echo getDay($eachResult['contentdate']) ?></span>
                                                               <span class="event-month"><?php echo getMonth($eachResult['contentdate']).'&nbsp&nbsp&nbsp月' ?></span>
                                                             </span>
                                                           </div>
-                                                          <div class="event-list-item-info myevent-list-item" style="padding:1px 0 5px 	5px;">
-                                                            <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
-                                                              <h4 style="margin-top:0px" >
-                                                                <a class="hover-yellow" href="newsDetail.php?id=<?php echo $eachResult["id"].'&type='.$type ?>" target="_blank"><?php echo $eachResult['title'] ?></a>
+                                                          <div class="event-list-item-info myevent-list-item" style="padding:10px 0 5px 15px;height:100px">
+                                                            <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height:60px;overflow: hidden">
+                                                              <h4 style="margin-top:0px;margin-bottom:5px" >
+                                                                <a style="font-size:23px" class="hover-yellow" href="newsDetail.php?id=<?php echo $eachResult["id"].'&type='.$type ?>" target="_blank"><?php echo $eachResult['title'] ?></a>
                                                               </h4>
                                                             </div>
                                                             <div class="event-list-item-dm">
                                                               <div class="lined-info">
-                                                                <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time"><?php echo getTime($eachResult['contentdate']) ?></span></span>
+                                                                <span class="meta-data"><span class="glyphicon glyphicon-time"></span><span style="event-time">&nbsp<?php echo getTime($eachResult['contentdate']) ?></span></span>
                                                               </div>
                                                               <div class="lined-info event-location">
-                                                                <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address"><?php echo $eachResult['contentLocation'] ?></span></span>
+                                                                <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address"><?php echo $eachResult['contentLocation'] ?></span></span>
                                                               </div>
                                                             </div>
                                                           </div>
                                                         </div>
                                                       </li>
-					                                    <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
+					                                    <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
 														<?php
 															}
 														?>
@@ -143,7 +143,7 @@ if(isset($_SERVER['REQUEST_URI'])){
 										
 								          <h2 style="display:none">Pages</h2><div class="item-list">
 										  <ul class="pager"><li class="pager-current first">1</li>
-								             <li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>
+								             <!--<li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>-->
 								             <li> <a title="Go to next page" href="/news?page=1">next ›</a></li>
 								             <li> <a title="Go to last page" href="/news?page=1">last »</a></li>
 								          </ul>

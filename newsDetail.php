@@ -77,7 +77,16 @@
     </div><!-- /.carousel -->	  
 	  <div class="container" style="margin-top:-320px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
-         <h1 class="subTitle"><b>新闻·News</b></h1>
+         <h1 class="subTitle"><b><a style="cursor:pointer;color: rgba(206, 27, 27, 0.85098) !important;"
+		 <?php		 
+		 
+		  if($type==1) echo " href='news.php'>新闻·News";
+		  else if($type==2) echo " href='notifications.php?type=2'>会议·Conference";
+		  else if($type==3) echo " href='notifications.php?type=3'>讲座·Lectures";
+		  else if($type==4) echo " href='notifications.php?type=4'>活动·Activities";
+		 ?>
+		 
+		 </a></b></h1>
 		</div>
 	  </div>
 	  <div class="container" style="margin-top:0px">
@@ -98,7 +107,7 @@
 								                        <div id="view1" class="clearfix">
 								                            <div class="group-right">								                           
 															     <div>
-															       <div><?php echo $result["date"]  ?></div>
+															        <div><?php $d=strtotime($result['date']);echo date("Y-m-d", $d);?></div>
 																 </div>
 																 <div>															     
 																    <h2 style="font-size: 35px;margin-top:6px">

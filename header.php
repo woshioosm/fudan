@@ -47,7 +47,7 @@
 										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
 											<ul class="nav navbar-nav navbar-right" >
 												<li><a href="#banner"></a></li>
-												<li><a href="news.php">新闻</a></li>
+												<li><a href="news.php">动态</a></li>
 												<li><a href="paper.php">文库</a></li>
 												<li><a href="people.php">成员</a></li>	
 												<li><a href="http://yarwen.com/discuss/forum.php" target="_blank">讨论组</a></li>

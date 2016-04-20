@@ -1,12 +1,30 @@
 <?php
+   require("code/util/util.php");
     require("code/util/mysql.php");
+	
 	$htmlData = '';
 	$title='';
 	$newsType='';
 	$subContent='';
 	$contentdate='';
 	$contentLocation='';
-			
+	$arr;
+	$date="";
+	$time="";
+	$mode="";
+	$id="";
+	$type=1;
+	if(isset($_SERVER['REQUEST_URI'])){ 
+	  if(isset($_SERVER['REQUEST_URI'])){ 
+	    $url=$_SERVER['REQUEST_URI']; 
+	    $params = getParam($url);
+        if($params!=null){
+		  $mode= $params["mode"];
+		  $id= $params["id"];
+		  $type=$params["type"];	
+		}	  	
+	  }
+	}	
 	if (!empty($_POST['newstype'])) {
 	    $newsType=$_POST['newstype'];
 	}
@@ -29,16 +47,43 @@
 			$htmlData = stripslashes($_POST['content1']);
 		} else {
 			$htmlData = $_POST['content1'];
-		}
-		
-			
+		}			
 	}
 		
 	if (!empty($_POST['newstype'])) {  
 		$newsType=$_POST['newstype'];
-		$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
-		echo "<script type='text/javascript'>alert('save successfully');window.location.href='news.php' </script>";	
+		$result;
+		if($mode=='update'){
+			$result = PdoMysql::getInstance()->updateNews($id,$newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
+		    echo "<script type='text/javascript'>alert('save successfully');window.location.href='manager1.php' </script>";	
+		}else{
+			$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
+		    echo "<script type='text/javascript'>alert('save successfully');window.location.href='news.php' </script>";	
+		}
+		
+		
 		exit();
+	}else{
+		$result;
+	    if(isset($_SERVER['REQUEST_URI'])){ 
+	        $url=$_SERVER['REQUEST_URI']; 
+	    	$params = getParam($url);	
+            if($params!=null){
+				$id= $params["id"];
+	    	    $result= PdoMysql::getInstance()->getNews($params["id"])[0];
+			    $title = $result['title'];
+			    $subContent = $result['subContent'];
+	    	    $htmlData = $result['content'];
+				$contentLocation = $result['contentLocation'];
+				$contentdate = $result['contentdate'];
+                $arr = explode(" ",$contentdate);
+				if($arr!=null){
+					$date=$arr[0];
+					$time=$arr[1];
+				}
+			}
+			
+	    }	
 	}
 ?>
 <!DOCTYPE html>
@@ -165,6 +210,13 @@
    bodyBgs[4] = "resource/img/banner8.jpg";
    var randomBgIndex = Math.round( Math.random() * 4 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
+    
+   $('#newstype').get(0).selectedIndex =<?php echo $type-1 ?>;
+   <?php 
+      if($type!=1){
+		 echo "$('#otherFun').show()";
+	  }
+   ?>
 </script>
 
 </body></html>

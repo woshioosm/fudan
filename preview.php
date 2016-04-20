@@ -1,6 +1,6 @@
 <?php
 	$htmlData = '';
-	$title=$_POST['newstype'];
+	$title=$_POST['title'];
     $time = time();
     $timeStr = date("Y-m-d",$time); //2010-08-29
 	if (!empty($_POST['content1'])) {
@@ -58,7 +58,7 @@
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
-          <img class="first-slide" src="img/banner2.jpg" alt="First slide">
+          <img class="first-slide" src="resource/img/banner2.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
              

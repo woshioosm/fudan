@@ -42,24 +42,24 @@
 </head>
 <body>
 
-	<form  name="editorForm" method="post" action="editor.php" >
+	<form  name="editorForm" method="post" action="document.editorForm.action='editor.php?mode=<?php echo $mode ?>" >
 	   <div class="input-group" style="width:800px">
          <div style="height:34px;width:70px;float:left">	          
-           <select name="newstype" style="width:70px;height:34px;font-size:13px" onchange="typeSelect(this.options[this.options.selectedIndex].value)">
+           <select id="newstype" name="newstype" style="width:70px;height:34px;font-size:13px" onchange="typeSelect(this.options[this.options.selectedIndex].value)">
              <option value ="1">新闻</option>
              <option value ="2">会议</option>
              <option value="3">讲座</option>
              <option value="4">活动</option>
           </select>
          </div><!-- /btn-group -->	   
-         <input name="title" type="text" class="form-control" style="margin-left:5px;width:620px;float:left"  placeholder="文章名称" aria-label="...">
-		 <textarea name="subContent" style="margin-left:0px;margin-top:10px;width:696px;float:left"  placeholder="&nbsp&nbsp文章概述" ></textarea>
+         <input name="title" type="text" class="form-control" style="margin-left:5px;width:620px;float:left"  placeholder="文章名称" aria-label="..." value="<?php echo $title ?>">
+		 <textarea name="subContent" style="margin-left:0px;margin-top:10px;width:696px;height:100px;float:left"  placeholder="&nbsp&nbsp文章概述" ><?php echo $subContent ?></textarea>
          
 		 <div id="otherFun" style="width:700px;float:left;margin-top:10px;display:none">
-		      <input name="contentLocation" type="text" class="form-control" style="margin-left:0px;width:700;float:left;margin-top:10px;margin-bottom:10px"  placeholder="通知的地点" aria-label="...">
+		      <input value="<?php echo $contentLocation ?>" name="contentLocation" type="text" class="form-control" style="margin-left:0px;width:700;float:left;margin-top:10px;margin-bottom:10px"  placeholder="通知的地点" aria-label="...">
 		      <span>选择通知时间:</span><br>
-			  <input type="date" style="margin-top:5px" name="user_date">
-			  <input type="time" style="margin-top:5px" name="user_time">
+			  <input value="<?php echo $date?>" type="date" style="margin-top:5px" name="user_date">
+			  <input value="<?php echo $time?>" type="time" style="margin-top:5px" name="user_time">
 	     </div>
 		 
       </div><!-- /input-group -->
@@ -67,7 +67,7 @@
 		<textarea name="content1" style="width:700px;height:600px;visibility:hidden;"><?php echo htmlspecialchars($htmlData); ?></textarea>
 		<br />
 		<input type="submit" name="button" value="预览" onClick="document.editorForm.action='preview.php';document.editorForm.target='_blank'" /> 
-		<input type="submit" name="button" value="保存" onClick="document.editorForm.action='editor.php';document.editorForm.target='_self'"" /> 
+		<input type="submit" name="button" value="保存" onClick="document.editorForm.action='editor.php?mode=<?php echo $mode ?>&id=<?php echo $id ?>&type=<?php echo $type ?>';document.editorForm.target='_self'"" /> 
 		
 	</form>
 </body>

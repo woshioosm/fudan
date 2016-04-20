@@ -89,12 +89,12 @@
                               <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">活动:“反家暴.人权.治理”专题研讨沙龙</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm">
+                          <div class="event-list-item-dm" style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
                             </div>
-                            <div class="lined-info event-location">
-                              <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                            <div class="lined-info event-location" style="margin-top:-3px">
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
                             </div>
                           </div>
                         </div>
@@ -115,12 +115,12 @@
                               <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">会议:“反家暴.人权.治理”专题研讨沙龙</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm">
+                          <div class="event-list-item-dm"  style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
                             </div>
-                            <div class="lined-info event-location">
-                              <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                            <div class="lined-info event-location" style="margin-top:-3px">
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
                             </div>
                           </div>
                         </div>
@@ -141,12 +141,12 @@
                               <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">讲座:“反家暴.人权.治理”专题研讨沙龙</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm">
+                          <div class="event-list-item-dm"  style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><i class="fa fa-clock-o"></i> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
                             </div>
-                            <div class="lined-info event-location">
-                              <span class="meta-data"><i class="fa fa-map-marker"></i> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                            <div class="lined-info event-location" style="margin-top:-3px">
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
                             </div>
                           </div>
                         </div>
@@ -221,30 +221,30 @@
 				
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的报告展年度</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的报告革的视告</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">资讯:中国产业发展年度分析报改革</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">资讯:中国产业发展年度分析报改革报展年度告的</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告—</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告报告的告的</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月1日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">讲座:中国产业发展年告——供给改革的视</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">讲座:中国产业发展年告——供给改革的视告的</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的视角</a>
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的视角告的</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">5月12日</div>
 				

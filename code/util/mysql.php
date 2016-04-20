@@ -70,6 +70,19 @@ class PdoMysql{
 		return $this->stmt->execute();	
 	}
 	
+	public function updateNews($id,$type,$title,$subContent,$content,$contentdate,$contentLocation){
+		$time = time();	
+		$this->stmt = $this->dbh->prepare("update tb_news set title=:title,type=:type,subContent=:subContent,content=:content,date=:date,contentdate=:contentdate,contentLocation=:contentLocation where id=:id");
+	    $this->stmt->bindValue(':id', $id, PDO::PARAM_INT);
+		$this->stmt->bindValue(':title', $title, PDO::PARAM_STR);
+		$this->stmt->bindValue(':type', $type, PDO::PARAM_INT);
+		$this->stmt->bindValue(':subContent', $subContent, PDO::PARAM_STR);
+		$this->stmt->bindValue(':content', $content, PDO::PARAM_STR);
+		$this->stmt->bindValue(':date', date("Y-m-d",$time));
+		$this->stmt->bindValue(':contentdate', $contentdate);
+		$this->stmt->bindValue(':contentLocation', $contentLocation, PDO::PARAM_STR);
+		return $this->stmt->execute();	
+	}
 	
 
 	public function getAllNews($type){

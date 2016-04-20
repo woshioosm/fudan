@@ -1,20 +1,9 @@
 <?php
 require("code/util/mysql.php");
-require("code/util/util.php");
 
-if(isset($_SERVER['REQUEST_URI'])){ 
-	    $url=$_SERVER['REQUEST_URI']; 
-		$params = getParam($url);
-       		
-        if($params==null){
-			$params["type"] = 1;
-		}	
-		$type=$params["type"];
-		$result= PdoMysql::getInstance()->getAllPublications($type);
-}	
+$result= PdoMysql::getInstance()->getAllNews(1);
 
 ?>
-
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -55,14 +44,15 @@ if(isset($_SERVER['REQUEST_URI'])){
 <!-- NAVBAR
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
+    
      <div class="container">
 	  <?php include("header.php") ?>
-	 </div>       
-    <div id="myCarousel"  class="carousel slide" data-ride="carousel" >
+	 </div>    
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
-          <img id="slider" class="first-slide"  alt="First slide">
+          <img id="slider" class="first-slide" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
              
@@ -71,71 +61,64 @@ if(isset($_SERVER['REQUEST_URI'])){
         </div>
       </div>
     </div><!-- /.carousel -->
-  	<div class="container" style="margin-top:-320px;padding-left:0px">
+	  <div class="container" style="margin-top:-320px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
-         <h1 class="subTitle"><b>文库·Publication</b></h1>
+         <h1 class="subTitle"><b>新闻·News</b></h1>
 		</div>
-	  </div>		
-	<div class="container" style="margin-top:0px">
+	  </div>
+	  <div class="container" style="margin-top:0px">
             <div class="row">
               <div class="col-md-9 panelCol2">
-		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
-                   <div class="row" style="margin:15px 0px 0px 2px;" id="fudanNews">   
-			            <div class="wrapper">
+		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">                   
+                    <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
+			            <div class="wrapper" style="padding-top:0px">
                               <a name="main-content" class="top-anchor"></a>                                    
-                                   <section class="region region-content">								       
+                                   <section class="region region-content">
+								       <div class="ds-1col node node-page view-mode-full clearfix">
+								          <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h1 style="display:none">News</h1></div></div></div></div>
 								          <div id="block-views-hy-news-news" class="block block-views plain last even">
-								            <div class="content">
-								                <div class="view view-hy-news view-id-hy_news view-display-id-news">
-								                    <div class="view-content">								             
-								                         <?php
-														   foreach($result as $paper){
-														 ?>
-														 <div id="view1" class="clearfix">
-								                             <div>	
-															   <div style="width:195px;height:250px;float:left;margin-top:14px">
-															     <img src="resource/img/paper/<?php echo $paper['img'] ?>" style="width:150px;height:200px;border-style:solid;border-width:1px">
-																 </img>
-															   </div>
-                                                               <div class="group-right2;float:left">															 
-											 				     
-											 					 <div>															     
-											 					    <h2 style="font-size: 35px;">
-											 				             <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>" target="_blank" class="TitlePreview"><?php echo $paper['title'] ?></a>
-											 					    </h2>
-											 					 </div>
-																 <div>	
-											 				       <div style="margin-top:15px;font-size:16px"><?php echo $paper['subtitle'] ?></div>																   
-											 					 </div>	
-                                                                																 
-											 					  <div  style="margin-top:15px">
-																     <?php echo $paper['subAbstract'] ?>
-																  <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>"  target="_blank" class="more-link">更多</a>
-											 					  </div>
-															
-																</div>
-											 			    </div>    
-											 				  
-								                           </div>
-								                         
-								                         <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
-								                         <?php
-														   }
-														 ?>
-								                    </div>
-								                </div>
-								            </div>
-										    <hr  style="margin: 15px 0px 15px 0px">
-								            <h2 style="display:none">Pages</h2><div class="item-list">
-										    <ul class="pager">
-											 <li class="pager-current first">1</li>
-								             <!--<li class="pager-item"> 
-											 <a title="Go to page 2" href="/news?page=1">2</a>
-											 </li>-->
-								             <li> <a title="Go to next page" href="#">next ›</a></li>
-								             <li> <a title="Go to last page" href="#">last »</a></li>
+								           <div class="content">
+								               <div class="view view-hy-news view-id-hy_news view-display-id-news">
+								                   <div class="view-content">
+								                   	  <?php	
+                                                        foreach($result as $news){															
+														
+                                                      ?>													  
+								                        <div id="view1" class="clearfix">
+								                            <div class="group-right">								                           
+															     <div>
+															       <div><?php echo $news["date"]  ?></div>
+																 </div>
+																 <div>															     
+																    <h2 style="font-size: 35px;margin-top:6px">
+															           <a href="newsDetail.php?id=<?php echo $news["id"] ?>" target="_blank" class="TitlePreview"><?php echo $news["title"]  ?></a>
+																    </h2>
+																 </div>
+																
+																 <div class="newsAbstract">
+																 <?php echo $news["subContent"]  ?>
+																 <a href="editor.php?id=<?php echo $news["id"] ?>&mode=update&type=1" target="_blank" class="more-link">编辑</a>
+																 <a href="newsDetail.php?id=<?php echo $news["id"] ?>" class="more-link">删除</a>
+																 </div>
+														    </div>    
+															  
+								                          </div>
+								                        
+								                        <hr class="featurette-divider" style="margin: 15px 0px 15px 0px">
+								                      <?php	
+													     }
+								                      ?>
+								                   </div>
+								               </div>
+								           </div>
+										  <a href="editor.php" class="more-link" target="_blank">新增</a>
+								          <h2 style="display:none">Pages</h2><div class="item-list">
+										  <ul class="pager"><li class="pager-current first">1</li>
+								             <!--<li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>-->
+								             <li> <a title="Go to next page" href="/news?page=1">next ›</a></li>
+								             <li> <a title="Go to last page" href="/news?page=1">last »</a></li>
 								          </ul>
-								          </div>  
+								       </div>  
 								       </div>
 								      
 								   </section>
@@ -148,7 +131,7 @@ if(isset($_SERVER['REQUEST_URI'])){
 
 	          <div class="col-md-3" style="padding-left:0px;padding-right:15px">		
 		        <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-left:-50px;padding-right:50px">
-            <div class="panel-heading" style="background-color:#f8f8f8">
+            <div class="panel-heading" style="background-color:#f8f8f8;border:none">
                 <!--<i class="fa fa-link"></i>-->
                 
                 <div class="pull-right" style="">
@@ -156,14 +139,16 @@ if(isset($_SERVER['REQUEST_URI'])){
                 </div>
                 <div class="clearfix"></div>
 		   </div>
-             <div class="row" style="margin:40px 10px 60px 2px;padding:2px" id="fudanNews">   
+             <div class="row" style="margin:40px 10px 0px 2px;padding:2px" id="fudanNews">   
 			   <div class="sideNav">
 
                         <nav class="sidebar-navigation">
                             <ul>
-                                <li <?php if($type==1) echo "class='active'" ?>><a class="sideBar" href="paper.php?type=1">文章<span class="sidebarEn">&nbsp Paper</span></a></li>
-                                <li <?php if($type==2) echo "class='active'" ?>><a class="sideBar" href="paper.php?type=2" >著作<span class="sidebarEn">&nbsp Publication</span></a></li>
-                           
+                                <li  class="active"><a class="sideBar" href="news.php" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
+                                <li><a class="sideBar" href="manager2.php?type=2">会议<span class="sidebarEn">&nbsp Conference</span></a></li>
+                                <li><a class="sideBar" href="manager2.php?type=3">讲座<span class="sidebarEn">&nbsp Lectures</span></a></li>
+                                <li><a class="sideBar" href="manager2.php?type=4">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
+                               
                             </ul>
                         </nav> <!-- /sidebar-navigation -->
 
@@ -174,15 +159,29 @@ if(isset($_SERVER['REQUEST_URI'])){
 			</div>
           </div>  
          
-        </div><!-- /.col-sm-4 -->
+              </div><!-- /.col-sm-3 -->
              </div> <!--row-->
    
 	        <br><br>
          
-         </div>     
-	<?php
+         </div>  
+
+    <?php
 	   include("footer.php");
 	?>
+
+	 
+ <!-- Carousel
+    ================================================== -->
+
+
+  
+
+      <!-- FOOTER -->
+
+
+
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -193,7 +192,7 @@ if(isset($_SERVER['REQUEST_URI'])){
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
-   <script type="text/javascript">
+    <script type="text/javascript">
 	var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
    bodyBgs[0] = "resource/img/banner9.png";
    bodyBgs[1] = "resource/img/banner2.jpg";
