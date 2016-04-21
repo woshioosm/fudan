@@ -18,8 +18,8 @@
                 </div><!--//foooter-col-->
                 <div class="footer-col col-md-4 " style="padding-left:30px;padding-right:30px;text-align:center">
                     <div class="footer-col-inner">
-                        <h3 style="color: #cccccc;">口岸·中国·世界</h3>
-						 <p style="font-size:16px;color: #cccccc;">复旦大学</p>
+                        <h3 style="color: #cccccc;">口岸·中国·世界</h3>				
+						 <p style="font-size:16px;color: #cccccc;margin-top:25px">复旦大学</p>
                         <p style="font-size:15px;color: #cccccc;">海关史与海关文献国际研究中心</p>
 						
                         
@@ -27,10 +27,10 @@
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col--> 
                 <div class="footer-col col-md-4" style="font-size:12px;padding-left:30px;padding-right:30px;text-align:center;color: #cccccc">
-                    <div class="footer-col-inner">
+                    <div class="footer-col-inner" >
                         <h3 style="text-align:center">联系我们</h3>
 						<p><span class="glyphicon glyphicon-map-marker"></span>&nbsp上海杨浦区邯郸路220号   </p>            
-						<p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp0215345690 </p>
+						<p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp021530045690 </p>
 					    <p><span class="glyphicon glyphicon-envelope"></span>&nbsp haiguan@fudan.edu</p>
                     </div><!--//footer-col-inner-->            
                 </div><!--//foooter-col-->   
