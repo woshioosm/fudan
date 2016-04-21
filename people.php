@@ -230,6 +230,7 @@ $result = PdoMysql::getInstance()->getPeople();
    function setCurrent(id){
 	   $.ajax({ 
           type: "post", 
+          async:false,
           url: "code/util/getPeopleDetail.php?id="+id, 
           dataType: "json", 
           success: function (data) { 
