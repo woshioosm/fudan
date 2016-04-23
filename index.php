@@ -66,7 +66,7 @@
 		  <div class="panel panel-default panelheadingLeft" style="border-color:#f8f8f8">
             <div class=" panel-heading pannelOpactiy">
                 <!--<i class="fa fa-link"></i>-->             
-                 <a href="#"><span class="mytitle"><b> 最新通知 </b>
+                 <a href="notifications.php?type=2"><span class="mytitle"><b> 最新通知 </b>
                 <span style="color:#00f">></span></span></a>
                
                 
@@ -79,22 +79,22 @@
                       <div style="margin-left: 10px;">
                         <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
                           <span class="event-date">
-                            <span class="event-day">05</span>
+                            <span class="event-day">22</span>
                             <span class="event-month">四&nbsp&nbsp&nbsp月</span>
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:1px 0 5px 	5px;">
                           <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
                             <h4 style="margin-top:0px" >
-                              <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">活动:“反家暴.人权.治理”专题研讨沙龙</a>
+                              <a class="hover-yellow" href="newsDetail.php?id=32&type=3">讲座:&nbsp清末民初的慈善活动与扶乩团体--以上海济生会为例</a>
                             </h4>
                           </div>
                           <div class="event-list-item-dm" style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:30	</span></span>
                             </div>
                             <div class="lined-info event-location" style="margin-top:-3px">
-                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">复旦大学光华西主楼2001</span></span>
                             </div>
                           </div>
                         </div>
@@ -105,22 +105,22 @@
                       <div style="margin-left: 10px;">
                         <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
                           <span class="event-date">
-                            <span class="event-day">05</span>
+                            <span class="event-day">08</span>
                             <span class="event-month">四&nbsp&nbsp&nbsp月</span>
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
                           <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
                             <h4 style="margin-top:0px" >
-                              <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">会议:“反家暴.人权.治理”专题研讨沙龙</a>
+                              <a class="hover-yellow" href="newsDetail.php?id=33&type=3">讲座:&nbsp中国的城市转型：从地域社会向移民社会转变</a>
                             </h4>
                           </div>
                           <div class="event-list-item-dm"  style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:00	</span></span>
                             </div>
                             <div class="lined-info event-location" style="margin-top:-3px">
-                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">光华西主楼史地所2201会议室</span></span>
                             </div>
                           </div>
                         </div>
@@ -131,28 +131,28 @@
                       <div style="margin-left: 10px;">
                         <div class="event-list-item-date" style="width: 120px;height: 90px;overflow: hidden;margin-right: 15px;">
                           <span class="event-date">
-                            <span class="event-day">05</span>
-                            <span class="event-month">四&nbsp&nbsp&nbsp月</span>
+                            <span class="event-day">27</span>
+                            <span class="event-month">二&nbsp&nbsp&nbsp月</span>
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
                           <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
                             <h4 style="margin-top:0px" >
-                              <a class="hover-yellow" href="http://news.fudan.edu.cn/calendar/#a=one&amp;evid=6312">讲座:“反家暴.人权.治理”专题研讨沙龙</a>
+                              <a class="hover-yellow" href="newsDetail.php?id=35&type=2">会议:&nbsp海关文献与近代中国学术研讨会</a>
                             </h4>
                           </div>
                           <div class="event-list-item-dm"  style="margin-top:4px">
                             <div class="lined-info">
-                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">14:00</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time"> 08:30</span></span>
                             </div>
                             <div class="lined-info event-location" style="margin-top:-3px">
-                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">江湾校区廖凯原法学院楼202室</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">复旦大学逸夫科技楼</span></span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
-					 <hr class="featurette-divider" style="margin: 0px 0px 0px 0px">
+					
 
 					</ul>
                   <!--<div class="panel-footer" style="margin-top: -10px;">-->
@@ -221,44 +221,48 @@
 				
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的报告展年度</a>
+				    <a style="color:#555" href="newsDetail.php?id=21">中国海关史与海关文献国际研究中心成立（光明日报）</a>
 				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的报告革的视告</a>
+				    <a style="color:#555" href="newsDetail.php?id=22">“海关文献与近代中国”国际学术研讨会在复旦大学召开</a>
 				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">资讯:中国产业发展年度分析报改革报展年度告的</a>
-				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
-				
-				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告报告的告的</a>
-				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月1日</div>
-				
-				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">讲座:中国产业发展年告——供给改革的视告的</a>
+				    <a style="color:#555" href="newsDetail.php?id=28">复旦成立海关史研究中心：旧海关文献为何备受学界关注</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告的视角告的</a>
+				    <a style="color:#555" href="newsDetail.php?id=29">新一批哈佛大学图书馆馆藏未刊中国旧海关史料发布</a>
 				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">5月12日</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月1日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告——供给</a>
+				    <a style="color:#555" href="newsDetail.php?id=30">樊如森副教授新著《华北与蒙古高原近代经济地理》出版</a>
 				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">11月18日</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
+				
+				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
+				    <a style="color:#555" href="newsDetail.php?id=31">“中国近代经济地理格局形成的机制与表现”学术研讨会</a>
+				</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">2月12日</div>
+				
+				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
+				    <a style="color:#555" href="newsDetail.php?id=37">九卷本《中国近代经济地理》第一卷出版</a>
+				</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">1月18日</div>
                <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">新闻:中国产业发展年度分析报告——供给</a>
+				    <a style="color:#555" href="newsDetail.php?id=38">全国青年历史地理学者论坛在本中心召开</a>
 				</div>
-				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">11月18日</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">1月18日</div>
+				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:24px;margin-left:15px;" class="col-xs-9 add-ellipsis">
+				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html"></a>
+				</div>
+				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2"></div>
 			</div>
           </div>            
-		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
+		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-top:21px">
            <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
                  <a href="#"><span class="mytitle" ><b>讨论区</b>
