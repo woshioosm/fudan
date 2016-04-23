@@ -295,14 +295,14 @@
 				  </div>
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究要做什么？</a>
+				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究的主要内容是什么？</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
 				  </div>  
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				   <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究要做什么？</a>
+				   <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=5&extra=page%3D1">旧海关出版物在世界范围内的收藏情况</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
@@ -512,13 +512,16 @@
     });   
   }  
   var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
-   bodyBgs[0] = "resource/img/banner9.png";
+   bodyBgs[0] = "resource/img/banner9.jpg";
    bodyBgs[1] = "resource/img/banner2.jpg";
-   bodyBgs[2] = "resource/img/banner2.png";
-   bodyBgs[3] = "resource/img/banner9.png";
+   bodyBgs[2] = "resource/img/banner1.jpg";
+   bodyBgs[3] = "resource/img/banner9.jpg";
    bodyBgs[4] = "resource/img/banner8.jpg";
-   var randomBgIndex = Math.round( Math.random() * 4 );
+   bodyBgs[5] = "resource/img/banner10.jpg";
+   bodyBgs[6] = "resource/img/banner9.jpg";
+   var randomBgIndex = Math.round( Math.random() * 7 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
+
 </script>
   
 

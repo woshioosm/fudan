@@ -194,10 +194,10 @@ $result= PdoMysql::getInstance()->getAllNews(1);
     <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
 	var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
-   bodyBgs[0] = "resource/img/banner9.png";
+   bodyBgs[0] = "resource/img/banner9.jpg";
    bodyBgs[1] = "resource/img/banner2.jpg";
-   bodyBgs[2] = "resource/img/banner2.png";
-   bodyBgs[3] = "resource/img/banner9.png";
+   bodyBgs[2] = "resource/img/banner2.jpg";
+   bodyBgs[3] = "resource/img/banner9.jpg";
    bodyBgs[4] = "resource/img/banner8.jpg";
    var randomBgIndex = Math.round( Math.random() * 4 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
