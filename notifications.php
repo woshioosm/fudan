@@ -123,7 +123,21 @@ if(isset($_SERVER['REQUEST_URI'])){
                                                             </div>
                                                             <div class="event-list-item-dm">
                                                               <div class="lined-info">
-                                                                <span class="meta-data"><span class="glyphicon glyphicon-time"></span><span style="event-time">&nbsp<?php echo getTime($eachResult['contentdate']) ?></span></span>
+                                                                <span class="meta-data">
+																   <span class="glyphicon glyphicon-time"></span>
+																   <span style="event-time">&nbsp<?php echo getTime($eachResult['contentdate']) ?>
+																   </span>
+																   <?php
+																      if($type==3){
+																   ?>
+																   &nbsp&nbsp
+																   <span class="glyphicon glyphicon-user"></span>
+																   <span style="event-time">&nbsp<?php echo $eachResult['people'] ?>
+																   </span>
+																   <?php
+																	  }
+																   ?>
+																</span>
                                                               </div>
                                                               <div class="lined-info event-location">
                                                                 <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address"><?php echo $eachResult['contentLocation'] ?></span></span>
