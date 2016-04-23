@@ -80,6 +80,7 @@
 	    	    $htmlData = $result['content'];
 				$contentLocation = $result['contentLocation'];
 				$contentdate = $result['contentdate'];
+				$people= $result['people'];
                 $arr = explode(" ",$contentdate);
 				if($arr!=null){
 					$date=$arr[0];
