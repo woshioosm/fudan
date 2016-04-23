@@ -274,46 +274,41 @@
 		   </div>
              <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41089.html">话题:中国产业发展年度分析报告——供给改革的</a>
+				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=2&extra=page%3D1">讨论:&nbsp海关外籍洋员著述列举</a>
 				  </div>
 				  <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">3</span></a>
 				  </div>
 				   
 				  <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41085.html">热点:教授为2015级新生分析报告——供给改革的</a>
+				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=1&extra=page%3D1">话题:&nbsp统计资料使用时需要注意统计单位转换</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">31</span></a>
 				  </div>  
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41085.html">讨论:中国产业发展张伟然教授为2015级新生的视角</a>
+				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=4&extra=page%3D1">讨论:欢迎大家分享一些数据分析与展示的工具</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">13</span></a>
 				  </div>
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41085.html">会议:中国产业发展年度张伟然教授为2015级新生</a>
+				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究要做什么？</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
 				  </div>  
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41085.html">研讨:中国产业发展年度张伟然教授为2015级新生</a>
+				   <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究要做什么？</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
 				  </div>  
 
-                  <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://news.fudan.edu.cn/2016/0318/41085.html">话题:中国产业发展年度张伟然教授为2015级新生</a>
-				  </div>
-				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
-				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
-				  </div>  				  
+                 			  
              </div>
           </div>
          
@@ -330,19 +325,19 @@
                 <div class="clearfix"></div>
 		   </div>
 		   <div class="row" style="margin-left:2px;margin-top:18px">  
-		     <div class="col-sm-7"  style="padding:0px 0px 0px 20px">
-			    <a href="#"><img src="resource/img/book1.png" alt="..." style="height:156px; widht:200px" class="img-thumbnail">  </a>  
+		     <div class="col-sm-6"  style="padding:0px 0px 0px 20px">
+			    <a href="paperDetail.php?id=0&type=2"><img src="resource/img/paper/paper1.jpg" alt="..." style="height:155px; width:125px" class="img-thumbnail">  </a>  
 			 </div>
 			 <div class="col-sm-5" style="padding:60px 0px 0px 0px">
 			    <a href="#">
-			    <h3 style="margin-top:65px">吴松弟  </h3>
+			    <h3 style="margin-top:60px;margin-left:5px">吴松弟 <span style="font-size:14px">等</span>  </h3>
 				
 				</a>
 			 </div>
 		   </div>
 		   <div class="row" style="margin-left:2px;margin-top:10px">  
 		     <div class="col-sm-12" > 
-			    <a href="#"><span>《中国旧海关出版物评述——以美国哈佛燕京图书馆收藏为中心》 </span></a>
+			    <a href="paperDetail.php?id=0&type=2"><span>《中国百年经济拼图：港口城市及其腹地与中国现代化》</span></a>
 			 </div>
 		   </div>
 		    <div class="row" style="margin-left:2px;margin-top:10px">  
@@ -350,19 +345,19 @@
 		  <!-- <hr style="margin-left:40px;margin-right:40px;height:2px;border:none;border-top:1px dashed" /> -->
 		   
 		    <div class="row" style="margin-left:2px;margin-top:10px">  
-		     <div class="col-sm-7" style="padding:0px 0px 0px 20px">
-			    <a href="#"><img src="resource/img/book2.png" alt="..." style="height:156px; widht:200px" class="img-thumbnail">  </a>  
+		     <div class="col-sm-6" style="padding:0px 0px 0px 20px">
+			    <a href="paperDetail.php?id=3&type=2"><img src="resource/img/paper/paper4.jpg" alt="..." style="height:155px; width:130px" class="img-thumbnail">  </a>  
 			 </div>
 			 <div class="col-sm-5" style="padding:60px 0px 0px 0px">
 			    <a href="#">
-			    <h3 style="margin-top:40px">Liehui Wang  </h3>
+			    <h3 style="margin-top:60px;margin-left:5px">吴松弟</h3>
 				
 				</a>
 			 </div>
 		   </div>
 		   <div class="row" style="margin-left:2px;margin-top:10px">  
 		     <div class="col-sm-12" > 
-			      <a href="#"><span>The British and Japanese Maritime Network in China in the 1920s </span></a>
+			      <a href="paperDetail.php?id=3&type=2"><span>《中国古代都城》</span></a>
 				 
 			 </div>
 		   </div>
@@ -405,12 +400,12 @@
           <p><a class="btn btn-default" href="" role="button">地图位置 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-4" style="text-align:center">
-		  <a href="">
+		  <a href="aboutus.php">
             <img class="img-circle" src="resource/img/cooperation.png" alt="Generic placeholder image" width="140" height="140">
           </a>
 		  <h2>联系·合作</h2>
           <p>参与中心的合作项目，共同发展.</p>
-          <p><a class="btn btn-default" href="" role="button">参与合作 »</a></p>
+          <p><a class="btn btn-default" href="aboutus.php" role="button">参与合作 »</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
