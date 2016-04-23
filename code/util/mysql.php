@@ -4,7 +4,7 @@ class PdoMysql{
 	public $dbhost = 'localhost';
  	public $dbport = '3306';
  	public $dbname = 'fudan';
- 	public $dbuser = 'root';
+ 	public $dbuser = 'fudan';
  	public $dbpass = 'fudan123';
  	public $charset = 'utf8';
  	public $stmt = null;
