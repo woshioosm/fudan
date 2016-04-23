@@ -56,8 +56,10 @@
 		 <textarea name="subContent" style="margin-left:0px;margin-top:10px;width:696px;height:100px;float:left"  placeholder="&nbsp&nbsp文章概述" ><?php echo $subContent ?></textarea>
          
 		 <div id="otherFun" style="width:700px;float:left;margin-top:10px;display:none">
-		      <input value="<?php echo $contentLocation ?>" name="contentLocation" type="text" class="form-control" style="margin-left:0px;width:700;float:left;margin-top:10px;margin-bottom:10px"  placeholder="通知的地点" aria-label="...">
-		      <span>选择通知时间:</span><br>
+		      <input value="<?php echo $contentLocation ?>" name="contentLocation" type="text" class="form-control" style="margin-left:0px;width:400;float:left;margin-top:10px;margin-bottom:10px"  placeholder="通知的地点" aria-label="...">
+              <input value="<?php echo $people ?>" name="people" type="text" class="form-control" style="margin-left:0px;width:200;float:left;margin-top:10px;margin-bottom:10px"  placeholder="相关人物" aria-label="...">
+		     		     
+			  <span>选择通知时间:</span><br>
 			  <input value="<?php echo $date?>" type="date" style="margin-top:5px" name="user_date">
 			  <input value="<?php echo $time?>" type="time" style="margin-top:5px" name="user_time">
 	     </div>

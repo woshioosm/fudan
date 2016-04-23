@@ -8,6 +8,7 @@
 	$subContent='';
 	$contentdate='';
 	$contentLocation='';
+	$people='';
 	$arr;
 	$date="";
 	$time="";
@@ -40,7 +41,9 @@
 	if (!empty($_POST['subContent'])) {
 		$subContent=$_POST['subContent'];
 	}
-	
+	if (!empty($_POST['people'])) {
+		$people=$_POST['people'];
+	}
 	
 	if (!empty($_POST['content1'])) {
 		if (get_magic_quotes_gpc()) {
@@ -54,10 +57,10 @@
 		$newsType=$_POST['newstype'];
 		$result;
 		if($mode=='update'){
-			$result = PdoMysql::getInstance()->updateNews($id,$newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
+			$result = PdoMysql::getInstance()->updateNews($id,$newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation,$people);	
 		    echo "<script type='text/javascript'>alert('save successfully');window.location.href='manager1.php' </script>";	
 		}else{
-			$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation);	
+			$result = PdoMysql::getInstance()->saveNews($newsType,$title,$subContent,$htmlData,$contentdate,$contentLocation,$people);	
 		    echo "<script type='text/javascript'>alert('save successfully');window.location.href='news.php' </script>";	
 		}
 		
