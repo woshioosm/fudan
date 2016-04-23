@@ -118,7 +118,7 @@ if(isset($_SERVER['REQUEST_URI'])){
                                                           <div class="event-list-item-info myevent-list-item" style="padding:10px 0 5px 15px;height:100px">
                                                             <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height:60px;overflow: hidden">
                                                               <h4 style="margin-top:0px;margin-bottom:5px" >
-                                                                <a style="font-size:23px" class="hover-yellow" href="newsDetail.php?id=<?php echo $eachResult["id"].'&type='.$type ?>" target="_blank"><?php echo $eachResult['title'] ?></a>
+                                                                <a style="font-size:23px" class="hover-yellow" href="newsDetail.php?id=<?php echo $eachResult["id"].'&type='.$type ?>"><?php echo $eachResult['title'] ?></a>
                                                               </h4>
                                                             </div>
                                                             <div class="event-list-item-dm">

@@ -101,7 +101,7 @@ if(isset($_SERVER['REQUEST_URI'])){
 											 				     
 											 					 <div>															     
 											 					    <h2 style="font-size: 35px;">
-											 				             <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>" target="_blank" class="TitlePreview"><?php echo $paper['title'] ?></a>
+											 				             <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>"  class="TitlePreview"><?php echo $paper['title'] ?></a>
 											 					    </h2>
 											 					 </div>
 																 <div>	
@@ -110,7 +110,7 @@ if(isset($_SERVER['REQUEST_URI'])){
                                                                 																 
 											 					  <div  style="margin-top:15px">
 																     <?php echo $paper['subAbstract'] ?>
-																  <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>"  target="_blank" class="more-link">更多</a>
+																  <a href="paperDetail.php?id=<?php echo $paper['id'] ?>&type=<?php echo $paper['type'] ?>"   class="more-link">更多</a>
 											 					  </div>
 															
 																</div>

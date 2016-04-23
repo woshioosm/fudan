@@ -91,13 +91,13 @@ $result= PdoMysql::getInstance()->getAllNews(1);
 																 </div>
 																 <div>															     
 																    <h2 style="font-size: 35px;margin-top:6px">
-															           <a href="newsDetail.php?id=<?php echo $news["id"] ?>" target="_blank" class="TitlePreview"><?php echo $news["title"]  ?></a>
+															           <a href="newsDetail.php?id=<?php echo $news["id"] ?>"  class="TitlePreview"><?php echo $news["title"]  ?></a>
 																    </h2>
 																 </div>
 																
 																 <div class="newsAbstract">
 																 <?php echo $news["subContent"]  ?>
-																 <a href="newsDetail.php?id=<?php echo $news["id"] ?>" target="_blank" class="more-link">更多</a>
+																 <a href="newsDetail.php?id=<?php echo $news["id"] ?>"  class="more-link">更多</a>
 																 </div>
 														    </div>    
 															  
