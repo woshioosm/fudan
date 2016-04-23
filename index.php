@@ -62,7 +62,7 @@
 
 	 <div class="container marketing" >
        <div class="row">
-        <div class="col-sm-4 panelCol">		
+        <div class="col-md-4 panelCol">		
 		  <div class="panel panel-default panelheadingLeft" style="border-color:#f8f8f8">
             <div class=" panel-heading pannelOpactiy">
                 <!--<i class="fa fa-link"></i>-->             
@@ -181,36 +181,36 @@
                 <div class="clearfix"></div>
 		   </div>
             <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
-			  <div class="col-xs-6 ">
-				  <a href="#" class="thumbnail">
-                    <img src="resource/img/paper.png" style="height:80px;width:80px" alt="...">
+			  <div class="col-xs-5 ">
+				  <a href="#" class="thumbnail" style="border:none" title="照片资料">
+                    <img src="resource/img/picture.png" style="height:80px;width:80px" alt="...">
                   </a>
 			  </div>
-			 <div class="col-xs-6">
-				  <a href="#" class="thumbnail">
-                    <img src="resource/img/paper1.png" style="height:80px;width:80px" alt="...">
+			 <div class="col-xs-5">
+				 <a href="#" class="thumbnail" style="border:none" title="统计数据">
+                    <img src="resource/img/chart.png" style="height:80px;width:80px" alt="...">
                   </a>
 			  </div>
 				   
-			  <div class="col-xs-6">
-				  <a href="#" class="thumbnail">
-                    <img src="resource/img/paper.png" style="height:80px;width:80px" alt="...">
+			  <div class="col-xs-5">
+				   <a href="#" class="thumbnail" style="border:none" title="海关文献目录">
+                    <img src="resource/img/book.png" style="height:80px;width:80px" alt="...">
                   </a>
 			  </div>
-			 <div class="col-xs-6">
-				  <a href="#" class="thumbnail">
-                    <img src="resource/img/paper.png" style="height:80px;width:80px" alt="...">
+			 <div class="col-xs-5">
+				   <a href="#" class="thumbnail" style="border:none" title="历史地图和地理信息系统">
+                    <img src="resource/img/map2.png" style="height:80px;width:80px" alt="...">
                   </a>
 			  </div>
 			</div>
           </div>
  
         </div><!-- /.col-sm-4 -->
-        <div class="col-sm-5 panelCol">
+        <div class="col-md-5 panelCol">
 		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8">
             <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
-                <a href="#"><span class="mytitle" ><b>综合新闻 </b>
+                <a href="news.php"><span class="mytitle" ><b>综合新闻 </b>
                  <span style="color:#00f">></span></span></a>
                 <div class="pull-right" style="">
 
@@ -265,7 +265,7 @@
 		 <div class="panel panel-default panelheading" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-top:21px">
            <div class="panelheading panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->              
-                 <a href="#"><span class="mytitle" ><b>讨论区</b>
+                 <a href="http://yarwen.com/discuss/forum.php"><span class="mytitle" ><b>讨论区</b>
                  <span style="color:#00f">></span></span></a>
                 <div class="pull-right" style="">
 
@@ -313,11 +313,11 @@
           </div>
          
 	   </div><!-- /.col-sm-4 -->
-        <div class="col-sm-3 panelCol">
+        <div class="col-md-3 panelCol">
           <div class="panel panel-default panelheadingRight" style="border-color:#f8f8f8;background-color:#f8f8f8">
            <div class=" panel-heading pannelOpactiy" >
                 <!--<i class="fa fa-link"></i>-->                
-                <a href="#"><span class="mytitle" ><b>学术文库 </b>
+                <a href="paper.php"><span class="mytitle" ><b>学术文库 </b>
                  <span style="color:#00f">></span></span></a>
                 <div class="pull-right" style="">
 
