@@ -66,7 +66,7 @@ $result = PdoMysql::getInstance()->getPeople();
 	  </div>				
     <div class="container" style="margin-top:0px">
         <div class="row">
-           <div class="col-md-9 panelCol2">
+           <div id="contentView" class="col-sm-12" style="padding-left:0px !important">
 		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">
                     <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
 			            <div class="wrapper">
@@ -144,35 +144,7 @@ $result = PdoMysql::getInstance()->getPeople();
                  </div> <!-- /.panel -->    		    
 	           </div><!-- /.col-sm-9 -->
 
-	          <div id="rightContent" class="col-md-3" style="padding-left:0px;padding-right:15px">		
-		  <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-left:-50px;padding-right:50px">
-            <div class="panel-heading" style="background-color:#f8f8f8">
-                <!--<i class="fa fa-link"></i>-->
-                
-                <div class="pull-right" style="">
-
-                </div>
-                <div class="clearfix"></div>
-		   </div>
-              <div class="row" style="margin:40px 10px 40px 2px;padding:2px" id="fudanNews">   
-			   <div class="sideNav">
-
-                        <nav class="sidebar-navigation">
-                            <ul>
-                                <li  class="active"><a class="sideBar" href="#" >中心主任<span class="sidebarEn">&nbsp Director</span></a></li>
-                                <li><a class="sideBar" href="#viewTitle2">中心成员<span class="sidebarEn">&nbsp Members</span></a></li>
-                               
-                            </ul>
-                        </nav> <!-- /sidebar-navigation -->
-
-                        
-                    </div>
-				
-				
-			</div>
-          </div>   
-         
-        </div><!-- /.col-sm-4 -->
+	   
         </div> <!--row-->
 	    <br><br> 
     </div>  	   	  

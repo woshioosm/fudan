@@ -94,7 +94,7 @@
                               <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:30	</span></span>
                             </div>
                             <div class="lined-info event-location" style="margin-top:-3px">
-                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">复旦大学光华西主楼2001</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">光华西主楼2001</span></span>
                             </div>
                           </div>
                         </div>
@@ -120,7 +120,7 @@
                               <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:00	</span></span>
                             </div>
                             <div class="lined-info event-location" style="margin-top:-3px">
-                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">光华西主楼史地所2201会议室</span></span>
+                              <span class="meta-data"><span class="glyphicon glyphicon-map-marker"></span> <span style="event-location-address">光华西主楼史地所2201</span></span>
                             </div>
                           </div>
                         </div>
@@ -221,30 +221,30 @@
 				
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=21">中国海关史与海关文献国际研究中心成立（光明日报）</a>
+				    <a style="color:#555" href="newsDetail.php?id=21">中国海关史与海关文献国际研究中心成立</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=22">“海关文献与近代中国”国际学术研讨会在复旦大学召开</a>
+				    <a style="color:#555" href="newsDetail.php?id=22">“海关文献与近代中国”国际学术研讨会在复旦..</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=28">复旦成立海关史研究中心：旧海关文献为何备受学界关注</a>
+				    <a style="color:#555" href="newsDetail.php?id=28">复旦成立海关史研究中心：旧海关文献为何..</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月18日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=29">新一批哈佛大学图书馆馆藏未刊中国旧海关史料发布</a>
+				    <a style="color:#555" href="newsDetail.php?id=29">新一批哈佛大学图书馆馆藏未刊中国旧海关..</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">4月1日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=30">樊如森副教授新著《华北与蒙古高原近代经济地理》出版</a>
+				    <a style="color:#555" href="newsDetail.php?id=30">樊如森新著《华北与蒙古高原近代经济地理》..</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">3月18日</div>
 				
 				 <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-9 add-ellipsis">
-				    <a style="color:#555" href="newsDetail.php?id=31">“中国近代经济地理格局形成的机制与表现”学术研讨会</a>
+				    <a style="color:#555" href="newsDetail.php?id=31">“中国近代经济地理格局形成的机制与表现”..</a>
 				</div>
 				<div style="font-size:10px;padding:0px;margin-left:16px;" class="col-xs-2">2月12日</div>
 				
