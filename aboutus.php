@@ -138,7 +138,7 @@
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--<script src="./js/holder.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+      <script src="resource/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">	
 	var bodyBgs = [];    //创建一个数组变量来存储背景图片的路径
    bodyBgs[0] = "resource/img/banner9.jpg";

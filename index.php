@@ -392,12 +392,12 @@
           <p><a class="btn btn-default" href="" role="button" data-toggle="modal" data-target="#myModal"> 登录注册 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-4" style="text-align:center">
-           <a href="">
+           <a href="map.php" target="_blank">
 		     <img class="img-circle" src="resource/img/map.png" alt="Generic placeholder image" width="140" height="140">
 		   </a>
           <h2>中心地址</h2>
           <p>中心位于杨浦区邯郸路220号</p>
-          <p><a class="btn btn-default" href="" role="button">地图位置 »</a></p>
+          <p><a class="btn btn-default" href="map.php" target="_blank" role="button">地图位置 »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-4" style="text-align:center">
 		  <a href="aboutus.php">
