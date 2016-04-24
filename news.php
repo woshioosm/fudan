@@ -111,8 +111,8 @@ $result= PdoMysql::getInstance()->getAllNews(1);
 								          <h2 style="display:none">Pages</h2><div class="item-list">
 										  <ul class="pager"><li class="pager-current first">1</li>
 								             <!--<li class="pager-item"> <a title="Go to page 2" href="/news?page=1">2</a></li>-->
-								             <li> <a title="Go to next page" href="/news?page=1">next ›</a></li>
-								             <li> <a title="Go to last page" href="/news?page=1">last »</a></li>
+								             <li> <a title="Go to next page" href="#">next ›</a></li>
+								             <li> <a title="Go to last page" href="#">last »</a></li>
 								          </ul>
 								       </div>  
 								       </div>
