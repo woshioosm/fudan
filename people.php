@@ -198,7 +198,7 @@ $result = PdoMysql::getInstance()->getPeople();
    bodyBgs[4] = "resource/img/banner8.jpg";
    bodyBgs[5] = "resource/img/banner10.jpg";
    bodyBgs[6] = "resource/img/banner9.jpg";
-   var randomBgIndex = Math.round( Math.random() * 7 );
+   var randomBgIndex = Math.round( Math.random() * 6 );
    $("#slider").attr("src",bodyBgs[randomBgIndex]);
    
    function setCurrent(id){
