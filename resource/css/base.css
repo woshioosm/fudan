@@ -13,13 +13,13 @@ header {
 	background-color:rgba(0, 0, 0, 0.4380392);
 	margin-bottom:0px;padding-bottom:0px;
 	padding-top:0px;
-	background-color: #5a5a5a\9; /*IE6、IE7、IE8会显示红色*/
+	background-color: #5a5a5a\9; /*IE6、IE7、IE8*/
 
 
 }
 .dropdown-menu{
 	background-color:rgba(0, 0, 0, 0.4380392);	
-	background-color: #5a5a5a\9; /*IE6、IE7、IE8会显示红色*/
+	background-color: #5a5a5a\9; /*IE6、IE7、IE8*/
 }
 .standard-vertical-bordered {
     border-top: 2px solid #dedede;
@@ -221,7 +221,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  line-height: 20px;
+  line-height: 19px;
 }
 .sidebar-navigation li {
   padding-left: 25px;

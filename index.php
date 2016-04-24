@@ -2,6 +2,7 @@
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN">
 <head>
+   
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,12 +85,12 @@
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:1px 0 5px 	5px;">
-                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
+                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 40px;overflow: hidden">
                             <h4 style="margin-top:0px" >
                               <a class="hover-yellow" href="newsDetail.php?id=32&type=3">讲座:&nbsp清末民初的慈善活动与扶乩团体--以上海济生会为例</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm" style="margin-top:4px">
+                          <div class="event-list-item-dm" style="margin-top:0px">
                             <div class="lined-info">
                               <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:30	</span></span>
                             </div>
@@ -110,12 +111,12 @@
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
-                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
+                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 40px;overflow: hidden">
                             <h4 style="margin-top:0px" >
                               <a class="hover-yellow" href="newsDetail.php?id=33&type=3">讲座:&nbsp中国的城市转型：从地域社会向移民社会转变</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm"  style="margin-top:4px">
+                          <div class="event-list-item-dm"  style="margin-top:0px">
                             <div class="lined-info">
                               <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time">15:00	</span></span>
                             </div>
@@ -136,12 +137,12 @@
                           </span>
                         </div>
                         <div class="event-list-item-info myevent-list-item" style="padding:5px 0 5px 5px;">
-                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 36px;overflow: hidden">
+                          <div class="lined-info lined-title event-title" style="position: relative;padding-right: 0;max-height: 40px;overflow: hidden">
                             <h4 style="margin-top:0px" >
                               <a class="hover-yellow" href="newsDetail.php?id=35&type=2">会议:&nbsp海关文献与近代中国学术研讨会</a>
                             </h4>
                           </div>
-                          <div class="event-list-item-dm"  style="margin-top:4px">
+                          <div class="event-list-item-dm"  style="margin-top:0px">
                             <div class="lined-info">
                               <span class="meta-data"><span class="glyphicon glyphicon-time"></span> <span style="event-time"> 08:30</span></span>
                             </div>
