@@ -93,7 +93,7 @@
        var map = new BMap.Map('container');
     var poi = new BMap.Point(121.511,31.305);
     map.centerAndZoom(poi, 17);
-    map.enableScrollWheelZoom();
+
 
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
                     '<img src="resource/img/fudan.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:90px;height:90px;margin-left:3px;"/>' +
