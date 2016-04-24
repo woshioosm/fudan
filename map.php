@@ -82,7 +82,7 @@
     </div><!-- /.carousel -->	  
     <div class="container" style="margin-top:-340px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
-         <h1 class="subTitle"><b>中心地图·关于我们</b></h1>
+         <h1 class="subTitle"><b>中心地图· Map</b></h1>
 		</div>
 	  </div>
     <div  class="container" style="padding-left:0px !important">
