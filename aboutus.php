@@ -45,11 +45,7 @@
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
           <img class="first-slide" src="resource/img/banner2.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-             
-            </div>
-          </div>
+        
         </div>
       </div>
     </div><!-- /.carousel -->	  

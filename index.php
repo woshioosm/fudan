@@ -50,11 +50,7 @@
       <div class="carousel-inner" role="listbox" >
         <div class="item active">
           <img id="slider" class="first-slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-             
-            </div>
-          </div>
+         
         </div>
       </div>
     

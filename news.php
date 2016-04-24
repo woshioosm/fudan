@@ -8,8 +8,8 @@ $result= PdoMysql::getInstance()->getAllNews(1);
 <!-- saved from url=(0046)http://v3.bootcss.com/examples/carousel/#about -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-	 <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
@@ -46,29 +46,25 @@ $result= PdoMysql::getInstance()->getAllNews(1);
 ================================================== -->
   <body style="font-family:微软雅黑 !important;background-color:#f8f8f8">
     
-     <div class="container">
+      <div class="container">
 	  <?php include("header.php") ?>
 	 </div>    
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-inner" role="listbox" >
-        <div class="item active">
-          <img id="slider" class="first-slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-             
-            </div>
-          </div>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-inner" role="listbox" >
+             <div class="item active">
+               <img id="slider" class="first-slide" alt="First slide">
+               
+             </div>
         </div>
-      </div>
-    </div><!-- /.carousel -->
+      </div><!-- /.carousel -->
 	  <div class="container" style="margin-top:-320px;padding-left:0px">
 	     <div class="jumbotron" style="padding:1px 40px 5px 15px;margin-bottom:-3px;opacity:0.9;background-color:#f8f8f8">
          <h1 class="subTitle"><b>新闻·News</b></h1>
 		</div>
 	  </div>
 	  <div class="container" style="margin-top:0px">
-            <div class="row">
+          <div class="row">
               <div class="col-md-9 panelCol2">
 		         <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8">                   
                     <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
@@ -131,17 +127,16 @@ $result= PdoMysql::getInstance()->getAllNews(1);
 
 	          <div class="col-md-3" style="padding-left:0px;padding-right:15px">		
 		        <div class="panel panel-default" style="border-color:#f8f8f8;background-color:#f8f8f8;margin-left:-50px;padding-right:50px">
-            <div class="panel-heading" style="background-color:#f8f8f8;border:none">
-                <!--<i class="fa fa-link"></i>-->
-                
-                <div class="pull-right" style="">
-
-                </div>
-                <div class="clearfix"></div>
-		   </div>
-             <div class="row" style="margin:40px 10px 0px 2px;padding:2px" id="fudanNews">   
-			   <div class="sideNav">
-
+                   <div class="panel-heading" style="background-color:#f8f8f8;border:none">
+                       <!--<i class="fa fa-link"></i>-->
+                       
+                       <div class="pull-right" style="">
+                   
+                       </div>
+                       <div class="clearfix"></div>
+		          </div>
+                  <div class="row" style="margin:40px 10px 0px 2px;padding:2px" id="fudanNews">   
+			        <div class="sideNav">
                         <nav class="sidebar-navigation">
                             <ul>
                                 <li  class="active"><a class="sideBar" href="news.php" >新闻<span class="sidebarEn">&nbsp News</span></a></li>
@@ -150,38 +145,23 @@ $result= PdoMysql::getInstance()->getAllNews(1);
                                 <li><a class="sideBar" href="notifications.php?type=4">活动<span class="sidebarEn">&nbsp Activity</span></a></li>
                                
                             </ul>
-                        </nav> <!-- /sidebar-navigation -->
-
-                        
-                    </div>
-				
-				
-			</div>
-          </div>  
+                        </nav> <!-- /sidebar-navigation -->                      
+                     </div>
+				 </div>
+                </div>  
          
               </div><!-- /.col-sm-3 -->
-             </div> <!--row-->
+          </div> 
    
 	        <br><br>
          
-         </div>  
+      </div>  
 
     <?php
 	   include("footer.php");
 	?>
 
 	 
- <!-- Carousel
-    ================================================== -->
-
-
-  
-
-      <!-- FOOTER -->
-
-
-
-	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

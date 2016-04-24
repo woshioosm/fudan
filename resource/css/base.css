@@ -228,12 +228,10 @@ body {
 }
 .sidebar-navigation a {
   font-size: 18px;
-  border: 0px solid #cacfd1;
-  border-top: 0;
   display: block;
   padding: 0.83333em 1.11111em;
   color: #474848;
-  font-family: "Open Sans",sans-serif;
+
   font-weight: 600;
   text-decoration: none;
 }
