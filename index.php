@@ -429,10 +429,10 @@
          </div>
          <div class="modal-body">
                 <div id="login" >
-				    <form class="bs-example bs-example-form" method="get" action="discuss/discuz_login_api.php" data-example-id="input-group-sizing">                                     
-                        <input type="text" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1">
+				    <form class="bs-example bs-example-form" method="post" action="discuss/discuz_login_api.php" data-example-id="input-group-sizing">                                     
+                        <input type="text" name="username" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1">
                       <br>
-                        <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
+                        <input type="text" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
 					  <br>
                       <div class="input-group">      
                         &nbsp				  
