@@ -445,7 +445,7 @@
 				
 				</div>
 				<div id="registry" style="display:none">
-				   <form class="bs-example bs-example-form" action="discuss/discuz_registry_api.php?action=reg"  data-example-id="input-group-sizing">                                      
+				   <form class="bs-example bs-example-form" method="post" action="discuss/discuz_registry_api.php?action=reg"  data-example-id="input-group-sizing">                                      
                      <input name="username" type="text" class="form-control" placeholder="用户名 " aria-describedby="sizing-addon1">                 
                      <br>                   					
                      <input name="email" type="text" class="form-control" placeholder="邮箱" aria-describedby="sizing-addon2">                   
