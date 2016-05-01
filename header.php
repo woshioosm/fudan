@@ -50,7 +50,7 @@
 												<li><a href="news.php">动态</a></li>
 												<li><a href="paper.php">文库</a></li>
 												<li><a href="people.php">成员</a></li>	
-												<li><a href="http://yarwen.com/discuss/forum.php" target="_blank">讨论组</a></li>
+												<li><a href="/discuss/forum.php" target="_blank">讨论组</a></li>
                                                 <li><a href="http://yarwen.com/blog/" target="_blank">海关史园地</a></li>										
 												<li class="dropdown">
                                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据库<span class="caret"></span></a>
