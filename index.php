@@ -429,7 +429,7 @@
          </div>
          <div class="modal-body">
                 <div id="login" >
-				    <form class="bs-example bs-example-form" data-example-id="input-group-sizing">                                     
+				    <form class="bs-example bs-example-form" action="./discuss/discuz_login_api.php?action=login" data-example-id="input-group-sizing">                                     
                         <input type="text" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1">
                       <br>
                         <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
@@ -438,25 +438,25 @@
                         &nbsp				  
                         <input type="checkbox" aria-label="..."> 
 						<span>&nbsp&nbsp下次自动登录</span>
-						<button class="btn btn-md btn-primary" type="button" style="margin-left:55px">登录</button>&nbsp&nbsp
+						<button type="submit" class="btn btn-md btn-primary" type="button" style="margin-left:55px">登录</button>&nbsp&nbsp
 						<a style="cursor:pointer;" onclick="changeToRegistry()">没有账号,请先注册</a>		
                       </div>
                     </form>
 				
 				</div>
 				<div id="registry" style="display:none">
-				   <form class="bs-example bs-example-form" data-example-id="input-group-sizing">                                      
-                     <input type="text" class="form-control" placeholder="用户名 " aria-describedby="sizing-addon1">                 
+				   <form class="bs-example bs-example-form" action="./discuss/discuz_registry_api.php?action=reg"  data-example-id="input-group-sizing">                                      
+                     <input name="username" type="text" class="form-control" placeholder="用户名 " aria-describedby="sizing-addon1">                 
                      <br>                   					
-                     <input type="text" class="form-control" placeholder="邮箱" aria-describedby="sizing-addon2">                   
+                     <input name="email" type="text" class="form-control" placeholder="邮箱" aria-describedby="sizing-addon2">                   
 					 <br>    					 
-                     <input type="text" class="form-control" placeholder="联系方式" aria-describedby="sizing-addon2">                  
+                     <input name="phone" type="text" class="form-control" placeholder="联系方式" aria-describedby="sizing-addon2">                  
 					 <br>    					
-                     <input type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">                    
+                     <input name="password" type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">                    
 					 <br>    					  
-                     <input type="text" class="form-control" placeholder="确认密码" aria-describedby="sizing-addon2">                     
+                     <input name="password2" type="text" class="form-control" placeholder="确认密码" aria-describedby="sizing-addon2">                     
 					 <br>                       
-				     <button class="btn btn-md btn-primary" type="button" style="margin-left:120px">&nbsp&nbsp点击注册&nbsp&nbsp</button>    
+				     <button type="submit" class="btn btn-md btn-primary" type="button" style="margin-left:120px">&nbsp&nbsp点击注册&nbsp&nbsp</button>    
                      <a style="cursor:pointer;"  onclick="changeToLogin()">已有账号，请登录</a>					 
                      <br>
                     </form>
