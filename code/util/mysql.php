@@ -1,7 +1,7 @@
 <?php 
 
 class PdoMysql{		
-	public $dbhost = 'localhost';
+	public $dbhost = 'hgc.fudan.edu.cn';
  	public $dbport = '3306';
  	public $dbname = 'fudan';
  	public $dbuser = 'fudan';
@@ -9,7 +9,7 @@ class PdoMysql{
  	public $charset = 'utf8';
  	public $stmt = null;
  	public $dbh = null;
- 	public $connect = true; // 是否長连接
+ 	public $connect = true; 
  	public $debug = false;
 	private static $_instance = null;
 	 
@@ -59,12 +59,15 @@ class PdoMysql{
 	}
 	public function saveNews($type,$title,$subContent,$content,$contentdate,$contentLocation,$people){
 		$time = time();	
-		$this->stmt = $this->dbh->prepare("INSERT INTO tb_news (title,type,subContent,content,date,contentdate,contentLocation,people) VALUES (:title,:type,:subContent,:content,:date,:contentdate,:contentLocation,people)");
+		$this->stmt = $this->dbh->prepare("INSERT INTO tb_news (title,type,subContent,content,date,contentdate,contentLocation,people) VALUES (:title,:type,:subContent,:content,:date,:contentdate,:contentLocation,:people)");
 	    $this->stmt->bindValue(':title', $title, PDO::PARAM_STR);
 		$this->stmt->bindValue(':type', $type, PDO::PARAM_INT);
 		$this->stmt->bindValue(':subContent', $subContent, PDO::PARAM_STR);
 		$this->stmt->bindValue(':content', $content, PDO::PARAM_STR);
 		$this->stmt->bindValue(':date', date("Y-m-d",$time));
+		if(empty($contentdate)){
+			$contentdate=date("Y-m-d",$time);
+		}
 		$this->stmt->bindValue(':contentdate', $contentdate);
 		$this->stmt->bindValue(':contentLocation', $contentLocation, PDO::PARAM_STR);
 		$this->stmt->bindValue(':people', $people, PDO::PARAM_STR);
@@ -80,6 +83,9 @@ class PdoMysql{
 		$this->stmt->bindValue(':subContent', $subContent, PDO::PARAM_STR);
 		$this->stmt->bindValue(':content', $content, PDO::PARAM_STR);
 		$this->stmt->bindValue(':date', date("Y-m-d",$time));
+		if(empty($contentdate)){
+			$contentdate=date("Y-m-d",$time);
+		}
 		$this->stmt->bindValue(':contentdate', $contentdate);
 		$this->stmt->bindValue(':contentLocation', $contentLocation, PDO::PARAM_STR);
 	    $this->stmt->bindValue(':people', $people, PDO::PARAM_STR);

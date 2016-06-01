@@ -271,35 +271,35 @@
 		   </div>
              <div class="row" style="margin:15px 0px 0px 2px" id="fudanNews">   
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=2&extra=page%3D1">讨论:&nbsp海关外籍洋员著述列举</a>
+				    <a style="color:#555" href="http://hgc.fudan.edu.cn/discuss/forum.php?mod=viewthread&tid=2&extra=page%3D1">讨论:&nbsp海关外籍洋员著述列举</a>
 				  </div>
 				  <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">3</span></a>
 				  </div>
 				   
 				  <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=1&extra=page%3D1">话题:&nbsp统计资料使用时需要注意统计单位转换</a>
+				    <a style="color:#555" href="http://hgc.fudan.edu.cn/discuss/forum.php?mod=viewthread&tid=1&extra=page%3D1">话题:&nbsp统计资料使用时需要注意统计单位转换</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">31</span></a>
 				  </div>  
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=4&extra=page%3D1">讨论:欢迎大家分享一些数据分析与展示的工具</a>
+				    <a style="color:#555" href="http://hgc.fudan.edu.cn/discuss/forum.php?mod=viewthread&tid=4&extra=page%3D1">讨论:欢迎大家分享一些数据分析与展示的工具</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">13</span></a>
 				  </div>
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				    <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究的主要内容是什么？</a>
+				    <a style="color:#555" href="http://hgc.fudan.edu.cn/discuss/forum.php?mod=viewthread&tid=3&extra=page%3D1">讨论:第二代海关史研究的主要内容是什么？</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
 				  </div>  
 
                   <div style="font-size:14px;color:#444;padding:0px;margin-bottom:15px;margin-left:15px;" class="col-xs-10 add-ellipsis">
-				   <a style="color:#555" href="http://yarwen.com/discuss/forum.php?mod=viewthread&tid=5&extra=page%3D1">旧海关出版物在世界范围内的收藏情况</a>
+				   <a style="color:#555" href="http://hgc.fudan.edu.cn/discuss/forum.php?mod=viewthread&tid=5&extra=page%3D1">旧海关出版物在世界范围内的收藏情况</a>
 				  </div>
 				   <div style="font-size:10px;padding:0px;margin-left:1px;" class="col-xs-1">
 				    <a style="color:#555" href="#"> <span class="badge" style="background-color:#cc3333;font-size:8px">99</span></a>
@@ -381,7 +381,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-md-4" style="text-align:center">
-          <a href="people.html">
+          <a href="people.php">
 		    <img class="img-circle" src="resource/img/vip.png" alt="Generic placeholder image" width="140" height="140">
            </a>
 		  <h2>中心成员</h2>
@@ -432,7 +432,7 @@
 				    <form class="bs-example bs-example-form" method="post" action="discuss/discuz_login_api.php" target="_blank" data-example-id="input-group-sizing">                                     
                         <input type="text" name="username" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1">
                       <br>
-                        <input type="text" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
+                        <input type="password" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
 					  <br>
                       <div class="input-group">      
                         &nbsp				  
@@ -452,9 +452,9 @@
 					 <br>    					 
                      <input name="phone" type="text" class="form-control" placeholder="联系方式" aria-describedby="sizing-addon2">                  
 					 <br>    					
-                     <input name="password" type="text" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">                    
+                     <input name="password" type="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">                    
 					 <br>    					  
-                     <input name="password2" type="text" class="form-control" placeholder="确认密码" aria-describedby="sizing-addon2">                     
+                     <input name="password2" type="password" class="form-control" placeholder="确认密码" aria-describedby="sizing-addon2">                     
 					 <br>                       
 				     <button type="submit" class="btn btn-md btn-primary" type="button" style="margin-left:120px">&nbsp&nbsp点击注册&nbsp&nbsp</button>    
                      <a style="cursor:pointer;"  onclick="changeToLogin()">已有账号，请登录</a>					 
