@@ -12,7 +12,7 @@
 							<a style="color: #dcdcdc;" href="http://www.soas.ac.uk/" target="_blank"><span class="glyphicon glyphicon-link"></span>&nbsp伦敦大学亚非学院</a></li>
 							<li><a style="color: #dcdcdc;" href="http://www.fas.harvard.edu/~chgis/" target="_blank"><span class="glyphicon glyphicon-link"></span>&nbsp哈佛地理空间研究中心</a></li>
 							<li><a style="color: #dcdcdc;"  href="http://yugong.fudan.edu.cn/" target="_blank"><span class="glyphicon glyphicon-link"></span>&nbsp复旦大学中国历史地理研究所</a></li>
-							<li><a style="color: #dcdcdc;""https://www.bris.ac.uk/history/customs/resources/archives/" target="_blank"><span class="glyphicon glyphicon-link"></span>&nbsp布里斯托尔大学近代海关史项目</a></li>
+							<li><a style="color: #dcdcdc;" href="https://www.bris.ac.uk/history/customs/resources/archives/" target="_blank"><span class="glyphicon glyphicon-link"></span>&nbsp布里斯托尔大学近代海关史项目</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
